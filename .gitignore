@@ -1,0 +1,40 @@
+# 依赖与编译产物
+node_modules/
+dist/
+dist-server/
+dist-server-bundle/
+runtime/
+src-tauri/target/
+
+# 二进制运行时（超过 GitHub 100MB 限制）
+node-runtime/
+
+# 本地数据隔离（排除 data 下所有内容，仅保留 samples 样例与 .gitkeep）
+data/*
+!data/samples/
+!data/samples/**
+!data/.gitkeep
+*.db
+*.db-wal
+*.db-shm
+
+# 邮箱与私密配置
+solofocus-email-config.json
+solofocus-synced-email-ids.json
+solofocus-email-candidates.json
+
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+
+# 系统临时文件与日志
+.DS_Store
+**/.DS_Store
+coverage/
+*.log
+*.log.*
+
+# 个人私有工作流脚本
+scripts/update-cagan-portfolio.mjs
+scripts/private/

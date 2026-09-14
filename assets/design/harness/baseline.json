@@ -1,0 +1,13 @@
+{
+  "$note": "设计债务基线。只许降不许升。降低后运行 --update-baseline 锁定新水位。",
+  "updated": "2026-09-01",
+  "metrics": {
+    "cssHardcodedHex": 766,
+    "cssHardcodedPx": 1931,
+    "gradients": 14,
+    "backdropFilter": 9,
+    "nonStandardFontWeight": 82,
+    "tsxInlineStyle": 20,
+    "tsxHardcodedHex": 8
+  }
+}

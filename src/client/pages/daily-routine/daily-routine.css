@@ -1,0 +1,49 @@
+.routine-page { min-width: 0; }
+.routine-main { display: flex; flex-wrap: wrap; gap: var(--gap-xl); align-items: flex-start; }
+.routine-main > section { flex: 1 1 calc(var(--gap-xl) * 13); min-width: 0; }
+.routine-page p { line-height: var(--leading); }
+.routine-date-bar, .routine-section-head, .routine-goal-heading, .routine-save-bar { display: flex; align-items: center; gap: var(--gap-md); flex-wrap: wrap; }
+.routine-date-bar { margin-bottom: var(--gap-lg); }
+.routine-date-label { display: flex; align-items: center; gap: var(--gap); }
+.routine-page input, .routine-page select, .routine-page textarea { color: var(--text); background: var(--app-bg); border: thin solid var(--border); border-radius: var(--radius); padding: var(--gap); font: inherit; }
+.routine-page :is(input, select, textarea, button, summary):focus-visible { outline: medium solid var(--blue); outline-offset: var(--gap-xs); }
+.routine-rule, .routine-first-action { padding: var(--gap-md); background: var(--soft); border-left: medium solid var(--navy); margin: 0 0 var(--gap-lg); }
+.routine-section { border-top: thin solid var(--border); padding-block: var(--gap-lg); }
+.routine-section-head { justify-content: space-between; margin-bottom: var(--gap-md); }
+.routine-section-head h2 { margin: 0; font-size: var(--text-xl); font-weight: 600; }
+.routine-section-head span, .routine-muted, .routine-save-bar span, .routine-date-bar { color: var(--text-secondary); font-size: var(--text-sm); }
+.routine-fields { border: 0; padding: 0; margin: 0; display: grid; gap: var(--gap-lg); min-width: 0; }
+.routine-fields label { display: grid; gap: var(--gap); font-size: var(--text-sm); color: var(--text-secondary); }
+.routine-fields textarea { width: 100%; resize: vertical; min-height: calc(var(--gap-xl) * 2); }
+.routine-goal { padding-bottom: var(--gap-lg); border-bottom: thin solid var(--border-light); }
+.routine-goal-heading { justify-content: space-between; }
+.routine-goal h3 { font-size: var(--text-lg); margin: 0; font-weight: 600; }
+.routine-goal p { margin: var(--gap-xs) 0 var(--gap); font-size: var(--text-sm); }
+.routine-save-bar { margin-top: var(--gap-md); }
+.routine-error { color: var(--red); }
+.routine-timeline { list-style: none; margin: var(--gap-lg) 0 0; padding: 0; }
+.routine-timeline li { display: grid; grid-template-columns: calc(var(--gap-xl) * 5) minmax(0, 1fr); gap: var(--gap-md); padding: var(--gap-md); border-top: thin solid var(--border-light); border-left: medium solid transparent; }
+.routine-timeline time { font-family: var(--font-mono); font-size: var(--text-sm); color: var(--text-secondary); }
+.routine-timeline strong { font-size: var(--text-base); font-weight: 500; }
+.routine-timeline summary { cursor: pointer; }
+.routine-timeline .is-core strong { font-weight: 600; }
+.routine-timeline p { margin: var(--gap-xs) 0 0; font-size: var(--text-sm); color: var(--text-secondary); }
+.routine-timeline .is-current { background: var(--soft); border-left-color: var(--navy); }
+.routine-now { margin-left: var(--gap); color: var(--navy); font-size: var(--text-xs); }
+.routine-table-wrap { overflow-x: auto; }
+.routine-history { width: 100%; border-collapse: collapse; font-size: var(--text-sm); text-align: left; }
+.routine-history :is(th, td) { padding: var(--gap-md) var(--gap); border-bottom: thin solid var(--border-light); vertical-align: top; }
+.routine-history th { font-weight: 500; white-space: nowrap; }
+.routine-history td { color: var(--text-secondary); }
+.routine-history td[data-status="done"], .routine-history td[data-status="minimum"] { color: var(--navy); font-weight: 600; }
+.routine-history-copy { min-width: calc(var(--gap-xl) * 6); max-width: calc(var(--gap-xl) * 14); overflow-wrap: anywhere; white-space: pre-wrap; }
+.routine-date-link { color: var(--navy); border: 0; background: transparent; font: inherit; cursor: pointer; padding: 0; }
+.routine-date-link:hover { text-decoration: underline; }
+.routine-week { margin-top: var(--gap-lg); font-size: var(--text-sm); color: var(--text-secondary); }
+.routine-week summary { cursor: pointer; color: var(--text); }
+.routine-week li { margin-block: var(--gap); }
+@media (max-width: 800px) {
+  .routine-section-head { align-items: flex-start; flex-direction: column; gap: var(--gap-xs); }
+  .routine-timeline li { grid-template-columns: 1fr; gap: var(--gap-xs); padding-inline: var(--gap); }
+  .routine-goal-heading { align-items: flex-start; }
+}

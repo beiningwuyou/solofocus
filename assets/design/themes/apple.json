@@ -1,0 +1,30 @@
+{
+  "$meta": { "name": "Apple", "basedOn": "pgt-default", "note": "Action Blue #0066cc + SF Pro + parchment 浅底；圆角 11/18，CTA 胶囊" },
+  "overrides": {
+    "--navy": { "light": "#0066cc", "dark": "#2997ff" },
+    "--navy-strong": { "light": "#0071e3", "dark": "#2997ff" },
+    "--blue": { "light": "#0066cc", "dark": "#2997ff" },
+    "--text": { "light": "#1d1d1f", "dark": "#ffffff" },
+    "--text-secondary": { "light": "#333333", "dark": "#d6d6da" },
+    "--muted": { "light": "#7a7a7a", "dark": "#a1a1a6" },
+    "--muted-light": { "light": "#86868b", "dark": "#6e6e73" },
+    "--app-bg": { "light": "#ffffff", "dark": "#1d1d1f" },
+    "--soft": { "light": "#f5f5f7", "dark": "#2a2a2c" },
+    "--soft-hover": { "light": "#ececf0", "dark": "#323234" },
+    "--border": { "light": "#d2d2d7", "dark": "#3a3a3c" },
+    "--border-light": { "light": "#e8e8ed", "dark": "#2d2d2f" },
+    "--violet": { "light": "#0066cc", "dark": "#2997ff" },
+    "--violet-soft": { "light": "#e8f1fd", "dark": "#18243a" },
+    "--violet-border": { "light": "#c9defb", "dark": "#294a73" },
+    "--violet-deep": { "light": "#0040a0", "dark": "#2997ff" },
+    "--font-display": "SF Pro Display, system-ui, -apple-system, sans-serif",
+    "--font-body": "SF Pro Text, system-ui, -apple-system, sans-serif",
+    "--font-mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "--radius": "11px",
+    "--radius-sm": "5px",
+    "--radius-lg": "18px",
+    "--radius-xl": "18px",
+    "--radius-pill": "9999px",
+    "--radius-full": "9999px"
+  }
+}

@@ -1,0 +1,64 @@
+/* ============================================================
+ * EXEMPLAR · 状态标签
+ *
+ * 演示语义色的正确用法：强色只作小面积标识，不作大面积背景。
+ * 这是"长时间沉浸使用"场景下最关键的色彩纪律。
+ *
+ * 要点：
+ *   1. 色彩承载在文字和小圆点上，底色始终是中性的
+ *   2. 用 currentColor 让圆点自动跟随语义色，减少重复定义
+ *   3. 不用 filled 背景色块——一屏十几个高饱和色块会视觉疲劳
+ * ============================================================ */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--app-bg);
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  line-height: var(--leading-heading);
+  white-space: nowrap;
+}
+
+/* 圆点继承父级语义色，无需为每个 tone 重复定义 */
+.chip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+/* ── 语义变体：只改文字色，底色保持中性 ── */
+
+.chip--info    { color: var(--blue); }
+.chip--success { color: var(--green); }
+.chip--warning { color: var(--orange); }
+.chip--danger  { color: var(--red); }
+.chip--ai      { color: var(--violet-deep); }
+.chip--muted   { color: var(--muted); }
+
+/* 可交互变体（用于状态切换） */
+.chip--button {
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.chip--button:hover:not(:disabled) {
+  background: var(--soft-hover);
+  border-color: var(--muted-light);
+}
+
+/* ============================================================
+ * ✗ 反例——不要这样写：
+ *
+ *   .chip--danger { background: var(--red); color: #fff; }
+ *
+ * 一个表格里出现十几个高饱和填充色块，
+ * 长时间注视会造成明显视觉疲劳，且会盖过真正需要注意的内容。
+ * 强色的价值在于稀缺——到处都是就等于没有。
+ * ============================================================ */

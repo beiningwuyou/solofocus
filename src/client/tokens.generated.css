@@ -1,0 +1,152 @@
+/* ============================================================
+ * DO NOT EDIT — 本文件由 scripts/tokens-build.mjs 自动生成
+ *
+ * 唯一事实源: assets/design/harness/tokens.json
+ * 修改流程:   编辑 tokens.json → node scripts/tokens-build.mjs
+ *
+ * 手动修改本文件会在下次生成时被覆盖，且 design-lint 会报错。
+ *
+ * source  PGT Workbench Design Tokens v1.0.0
+ * updated 2026-08-06
+ * ============================================================ */
+
+:root {
+  /* 品牌锚点、侧栏选中态、主按钮底色 */
+  --navy: #112c54;
+  /* navy 加深态，用于 hover/active */
+  --navy-strong: #092650;
+  /* 信息、链接、进行中、焦点环 */
+  --blue: #2563eb;
+  /* 成功、已完成、正向指标 */
+  --green: #16a34a;
+  /* 警告、临近截止、需关注 */
+  --orange: #f97316;
+  /* AI 相关功能专属标识 */
+  --violet: #7c3aed;
+  /* 错误、逾期、破坏性操作 */
+  --red: #ef4444;
+  /* AI 区块浅底 */
+  --violet-soft: #f5f3ff;
+  /* AI 区块边框 */
+  --violet-border: #ddd6fe;
+  /* AI 区块强调文字 */
+  --violet-deep: #6d28d9;
+  /* 正文主色。刻意非纯黑，降低长时间阅读疲劳 */
+  --text: #13213a;
+  /* 次级信息、说明文字 */
+  --text-secondary: #475569;
+  /* 弱化信息、表头、时间戳 */
+  --muted: #718096;
+  /* 占位符、禁用态 */
+  --muted-light: #94a3b8;
+  /* 页面底色。亮色为真白，不用灰白打底 */
+  --app-bg: #ffffff;
+  /* 面板/侧栏/表头浅底 */
+  --soft: #f7f9fc;
+  /* 行 hover 态 */
+  --soft-hover: #f0f3f8;
+  /* 主分隔线。层次的主要建立手段 */
+  --border: #e3e8f0;
+  /* 弱分隔线 */
+  --border-light: #edf0f4;
+  /* 小控件：标签、徽章 */
+  --radius-sm: 6px;
+  /* 默认控件：按钮、输入框 */
+  --radius: 9px;
+  /* 面板、卡片 */
+  --radius-lg: 11px;
+  /* 浮层：modal、大容器 */
+  --radius-xl: 14px;
+  /* 全圆角胶囊（品牌 CTA 语法，Apple/Claude/ElevenLabs 用） */
+  --radius-pill: 9999px;
+  /* 正圆：头像、icon 按钮 */
+  --radius-full: 9999px;
+  /* 极轻微抬升 */
+  --shadow-xs: 0 1px 3px rgba(17, 44, 84, .04);
+  /* 面板默认阴影 */
+  --shadow: 0 4px 16px rgba(17, 44, 84, .05);
+  /* 浮层：dropdown、modal */
+  --shadow-md: 0 8px 28px rgba(17, 44, 84, .08);
+  /* 紧密元素间：图标与文字 */
+  --gap-xs: 6px;
+  /* 默认间距。2026-08-06 修复自引用 bug 后恢复可用 */
+  --gap: 10px;
+  /* 组件间距 */
+  --gap-md: 16px;
+  /* 区块间距 */
+  --gap-lg: 22px;
+  /* 大区块分隔 */
+  --gap-xl: 28px;
+  /* 内容区左右内边距 */
+  --content-px: 24px;
+  /* 内容区上下内边距 */
+  --content-py: 22px;
+  /* 桌面侧栏宽度 */
+  --sidebar-width: 230px;
+  /* 顶栏高度 */
+  --topbar-height: 78px;
+  /* 元信息、时间戳、表头 */
+  --text-xs: 11px;
+  /* 次级文字、表格内容 */
+  --text-sm: 13px;
+  /* 正文基准。刻意小于常规 Web，服务高信息密度 */
+  --text-base: 14px;
+  /* 小标题 */
+  --text-lg: 16px;
+  /* 区块标题 */
+  --text-xl: 20px;
+  /* 页面标题 */
+  --text-2xl: 26px;
+  /* 关键数值展示 */
+  --text-3xl: 32px;
+  /* 正文 */
+  --weight-regular: 400;
+  /* 次级强调、按钮文字 */
+  --weight-medium: 500;
+  /* 标题、强调数值 */
+  --weight-semibold: 600;
+  /* 仅最高层级标题。慎用 */
+  --weight-bold: 700;
+  /* 标题行高 */
+  --leading-heading: 1.2;
+  /* 紧凑文本 */
+  --leading-tight: 1.3;
+  /* 正文行高 */
+  --leading: 1.5;
+  /* hover、focus 即时反馈 */
+  --transition-fast: 0.15s ease;
+  /* 展开/收起 */
+  --transition-normal: 0.2s ease;
+  /* 页面淡入。时长上限，不得超过 */
+  --transition-slow: 0.28s ease;
+  /* 全局正文/UI 字体栈 */
+  --font-sans: Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  /* 标题/展示字族。主题可覆盖为 SF Pro Display / Copernicus / Waldenburg / Forma 等 */
+  --font-display: Inter, "PingFang SC", system-ui, -apple-system, sans-serif;
+  /* 正文字族。主题可覆盖为 SF Pro Text / StyreneB / Times 等 */
+  --font-body: Inter, "PingFang SC", system-ui, -apple-system, sans-serif;
+  /* 代码/等宽字族。Claude/ElevenLabs 等品牌可覆盖为 JetBrains Mono */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.dark {
+  --navy: #93b4f5;
+  --navy-strong: #b8cff8;
+  --blue: #60a5fa;
+  --violet: #a78bfa;
+  --violet-soft: #2a1d52;
+  --violet-border: #4c3a8a;
+  --violet-deep: #a78bfa;
+  --text: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --muted: #64748b;
+  --muted-light: #475569;
+  --app-bg: #0f172a;
+  --soft: #1e293b;
+  --soft-hover: #25344a;
+  --border: #334155;
+  --border-light: #2d3a4d;
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, .2);
+  --shadow: 0 4px 16px rgba(0, 0, 0, .25);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, .35);
+}

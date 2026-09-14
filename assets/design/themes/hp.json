@@ -1,0 +1,31 @@
+{
+  "$meta": { "name": "HP", "basedOn": "pgt-default", "note": "Electric Blue #024ad8 + Forma DJR 几何无衬线 + 白纸底；圆角 4/8/16" },
+  "overrides": {
+    "--navy": { "light": "#024ad8", "dark": "#296ef9" },
+    "--navy-strong": { "light": "#0e3191", "dark": "#296ef9" },
+    "--blue": { "light": "#024ad8", "dark": "#296ef9" },
+    "--red": { "light": "#b3262b", "dark": "#b3262b" },
+    "--text": { "light": "#1a1a1a", "dark": "#f7f7f7" },
+    "--text-secondary": { "light": "#292929", "dark": "#e8e8e8" },
+    "--muted": { "light": "#636363", "dark": "#a8a8a8" },
+    "--muted-light": { "light": "#c2c2c2", "dark": "#8a8a8a" },
+    "--app-bg": { "light": "#ffffff", "dark": "#161616" },
+    "--soft": { "light": "#f7f7f7", "dark": "#232323" },
+    "--soft-hover": { "light": "#e8e8e8", "dark": "#2c2c2c" },
+    "--border": { "light": "#e8e8e8", "dark": "#3a3a3a" },
+    "--border-light": { "light": "#f7f7f7", "dark": "#232323" },
+    "--violet": { "light": "#024ad8", "dark": "#296ef9" },
+    "--violet-soft": { "light": "#e6f0fc", "dark": "#16213e" },
+    "--violet-border": { "light": "#c9e0fc", "dark": "#294a73" },
+    "--violet-deep": { "light": "#0e3191", "dark": "#296ef9" },
+    "--font-display": "'Forma DJR Micro', 'Helvetica Neue', Arial, sans-serif",
+    "--font-body": "'Forma DJR Micro', 'Helvetica Neue', Arial, sans-serif",
+    "--font-mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "--radius": "4px",
+    "--radius-sm": "3px",
+    "--radius-lg": "8px",
+    "--radius-xl": "16px",
+    "--radius-pill": "9999px",
+    "--radius-full": "9999px"
+  }
+}

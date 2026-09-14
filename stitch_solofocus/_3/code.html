@@ -1,0 +1,608 @@
+<!DOCTYPE html><html lang="zh-CN" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline": "#7e7576",
+          "surface-container-highest": "#d3e3ff",
+          "on-tertiary-fixed-variant": "#00458f",
+          "surface-container-low": "#eff4ff",
+          "primary": "#000000",
+          "tertiary-container": "#001b3f",
+          "secondary": "#016d35",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#001b3f",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "secondary-container": "#9bf7af",
+          "primary-fixed": "#e2e2e2",
+          "on-secondary-fixed": "#00210c",
+          "surface-tint": "#5e5e5e",
+          "surface-container-lowest": "#ffffff",
+          "inverse-primary": "#c6c6c6",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-bright": "#f8f9ff",
+          "surface-dim": "#cbdbf6",
+          "on-surface-variant": "#4c4546",
+          "on-secondary-container": "#0f743b",
+          "on-background": "#0b1c30",
+          "on-surface": "#0b1c30",
+          "surface-variant": "#d3e3ff",
+          "primary-container": "#1b1b1b",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary": "#ffffff",
+          "surface": "#f8f9ff",
+          "primary-fixed-dim": "#c6c6c6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#005226",
+          "surface-container": "#e6eeff",
+          "surface-container-high": "#dde9ff",
+          "tertiary-fixed-dim": "#abc7ff",
+          "background": "#f8f9ff",
+          "secondary-fixed-dim": "#7fda95",
+          "on-tertiary-container": "#4d83db",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#213146",
+          "tertiary": "#000000",
+          "on-primary-container": "#848484",
+          "tertiary-fixed": "#d7e3ff",
+          "outline-variant": "#cfc4c5",
+          "on-error": "#ffffff",
+          "inverse-on-surface": "#ebf1ff",
+          "secondary-fixed": "#9bf7af"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "0.75rem",
+          "gutter-mobile": "0.5rem",
+          "margin": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1rem",
+          "margin-desktop": "2rem",
+          "margin-tablet": "1.5rem",
+          "gutter-desktop": "1.25rem",
+          "space-xl": "1.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Manrope"],
+          "body-lg": ["Inter"],
+          "title-sm": ["Manrope"],
+          "label-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "body-sm": ["Inter"],
+          "headline-sm": ["Manrope"],
+          "label-sm": ["Inter"],
+          "headline-lg-mobile": ["Manrope"],
+          "label-md": ["Inter"],
+          "title-md": ["Manrope"],
+          "headline-md": ["Manrope"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "title-sm": ["13px", {"lineHeight": "18px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-sm": ["11px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "label-md": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "title-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">target</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">SoloFocus</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Personal Workspace</span></div></div><div class="px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="today-desk" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="">今日工作台</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg transition-colors bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]" data-path="all-tasks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="">全部任务</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="all-projects" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="">全部项目</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="domains-and-goals" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span class="">领域与目标</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="habit-tracker" href="#"><span class="material-symbols-outlined text-[20px]">repeat</span><span class="">习惯打卡</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sop-knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="">SOP 知识库</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">database</span><span class="font-label-md text-label-md text-on-surface">SQLite 本地存储</span></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>ACTIVE</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">设置 (备份与归档)</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline rounded-lg outline-none transition-all focus:bg-surface-container-lowest" placeholder="全局快速检索 (按 ⌘K 定位)..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_today</span><span class="">2026年9月7日 星期一 · 第34周</span></div><button aria-label="通知" class="relative p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button></div></header><main class="w-full pt-14 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- 顶部面包屑与全局操作顶栏 -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-lg mb-space-lg bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="flex items-center gap-1 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">全部习惯</span>
+</a>
+<span class="">/</span>
+<span class="text-on-surface font-title-sm text-title-sm">新建日常习惯</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+
+
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center justify-center px-space-md h-9 rounded-DEFAULT bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" href="#">
+        取消
+      </a>
+<button class="inline-flex items-center justify-center gap-1 px-space-lg h-9 rounded-DEFAULT bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg transition-all shadow-sm" id="btn-submit-top" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span class="">立即建立</span>
+</button>
+</div>
+</div>
+<!-- 主体工作区：精密分栏调度布局 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- 左侧主要参数配置面板 (8列) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- 模块 1：基础身份定义与关注领域 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+
+
+</div>
+
+</div>
+<!-- 习惯名称输入 -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1" for="habit-name-input">
+<span class="">习惯名称</span>
+<span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-outline" id="name-counter">13 / 80 字</span>
+</div>
+<input class="w-full h-10 px-space-md bg-surface-container-low text-on-surface font-body-lg text-body-lg rounded-DEFAULT outline-none focus:bg-surface-container-lowest transition-all" id="habit-name-input" maxlength="80" placeholder="例如：晨间梳理今日重点与代码合流、补充 2000ml 饮水、晚间盘点归档" type="text" value="晨间梳理今日重点与代码合流">
+
+</div>
+<!-- 快捷范例气泡胶囊 -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">常用模版</span>
+<div class="flex flex-wrap gap-space-xs">
+<button class="preset-pill px-space-sm py-1 rounded-DEFAULT bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-domain="工作与交付" data-preset="晨间梳理今日重点与代码合流" data-slot="晨间开工 (08:00~09:00)" type="button">
+              + 晨间重点梳理 (工作)
+            </button>
+<button class="preset-pill px-space-sm py-1 rounded-DEFAULT bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-domain="系统与架构" data-preset="技术文档精读与架构摘记 20分钟" data-slot="晚间复盘 (21:00~22:00)" type="button">
+              + 技术精读 (系统)
+            </button>
+<button class="preset-pill px-space-sm py-1 rounded-DEFAULT bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-domain="身心健康" data-preset="深蹲拉伸与视力调适" data-slot="工作间隙/午后" type="button">
+              + 深蹲拉伸 (健康)
+            </button>
+<button class="preset-pill px-space-sm py-1 rounded-DEFAULT bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-domain="财务与资产" data-preset="整理个人收支与账务流水" data-slot="任意时刻无限制" type="button">
+              + 收支记账 (财务)
+            </button>
+</div>
+</div>
+<!-- 所属关注领域选择 -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">所属领域</label>
+
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs" id="domain-selector">
+<button class="domain-btn active flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest text-on-surface font-title-sm text-title-sm transition-all text-left" data-value="工作与交付" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="">工作与交付</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="domain-btn flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-md text-body-md transition-all text-left" data-value="身心健康" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">身心健康</span>
+</span>
+</button>
+<button class="domain-btn flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-md text-body-md transition-all text-left" data-value="认知与输入" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="">认知与输入</span>
+</span>
+</button>
+<button class="domain-btn flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-md text-body-md transition-all text-left" data-value="系统与架构" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="">系统与架构</span>
+</span>
+</button>
+<button class="domain-btn flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-md text-body-md transition-all text-left" data-value="财务与资产" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-surface"></span>
+<span class="">财务与资产</span>
+</span>
+</button>
+<button class="domain-btn flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-md text-body-md transition-all text-left" data-value="暂不关联" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="">暂不关联</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 模块 2：契机、执行时段与微行动门槛 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+
+<span class="font-title-md text-title-md text-on-surface">执行行动</span>
+</div>
+
+</div>
+<!-- 执行时段标签单选 -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">执行时段</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs" id="slot-selector">
+<label class="slot-card flex items-start gap-space-sm p-space-md rounded-DEFAULT bg-surface-container-highest text-on-surface cursor-pointer transition-all">
+<input checked="" class="mt-0.5 accent-primary" name="habit_slot" type="radio" value="晨间开工 (08:00~09:00)">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm">晨间开工 (08:00~09:00)</span>
+
+</div>
+</label>
+<label class="slot-card flex items-start gap-space-sm p-space-md rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer transition-all">
+<input class="mt-0.5 accent-primary" name="habit_slot" type="radio" value="工作间隙/午后">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">工作间隙/午后</span>
+
+</div>
+</label>
+<label class="slot-card flex items-start gap-space-sm p-space-md rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer transition-all">
+<input class="mt-0.5 accent-primary" name="habit_slot" type="radio" value="晚间复盘 (21:00~22:00)">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">晚间复盘 (21:00~22:00)</span>
+
+</div>
+</label>
+<label class="slot-card flex items-start gap-space-sm p-space-md rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer transition-all">
+<input class="mt-0.5 accent-primary" name="habit_slot" type="radio" value="任意时刻无限制">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">任意时刻无限制</span>
+
+</div>
+</label>
+</div>
+</div>
+<!-- 最简可行行动（最小启动阻力） -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1" for="habit-mva-input">
+<span class="">最简行动</span>
+<span class="material-symbols-outlined text-[15px] text-outline" title="即使状态低迷也能轻松完成的底线行为">help</span>
+</label>
+
+</div>
+<input class="w-full h-10 px-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-DEFAULT outline-none focus:bg-surface-container-lowest transition-all" id="habit-mva-input" placeholder="例如：哪怕只列出一条核心任务 / 只喝一口温水 / 只读一页文档" type="text" value="哪怕只看一眼今日主干里程碑并确认 1 个首要任务">
+
+</div>
+<!-- 详细说明 / 备忘 -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="habit-desc-input">执行备忘 (选填)</label>
+<span class="font-label-sm text-label-sm text-outline" id="desc-counter">38 / 500 字</span>
+</div>
+<textarea class="w-full p-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-DEFAULT outline-none focus:bg-surface-container-lowest transition-all resize-none" id="habit-desc-input" maxlength="500" placeholder="记录具体动作要求、备忘或打卡前置准备..." rows="3">开工前先排查上游依赖，在今日工作台确认前三优先级，确认无阻塞后开始沉浸交付。</textarea>
+</div>
+</div>
+<!-- 模块 3：生效设定与单机存储底线规范 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px] text-on-surface">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">创建后立即生效并在今日首页开启追踪</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              单机纯本地 SQLite 存储，无网络依赖，实时同步写入 WAL 日志，自动纳入系统本地归档。
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 pl-11 sm:pl-0">
+
+<span class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-sm text-title-sm">每日 1 次</span>
+</div>
+</div>
+</div>
+<!-- 右侧动态即时效果预览卡片 (4列) -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-lg sticky top-20">
+<!-- 卡片 1：今日工作台实时视觉呈现 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface">visibility</span>
+<span class="font-title-md text-title-md text-on-surface">效果预览</span>
+</div>
+
+</div>
+<!-- 模拟今日工作台打卡块 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-md transition-all">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container text-on-surface font-label-sm text-label-sm" id="preview-domain-badge">
+              工作与交付
+            </span>
+<span class="font-label-sm text-label-sm text-outline" id="preview-slot-badge">
+              晨间开工 (08:00~09:00)
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-title-md text-title-md text-on-surface break-words" id="preview-title">晨间梳理今日重点与代码合流</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1" id="preview-mva">
+        
+        <span class="">基准：哪怕只看一眼今日主干里程碑并确认 1 个首要任务</span>
+      </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">今日状态</span>
+<span class="font-title-sm text-title-sm text-on-surface" id="preview-status-text">待执行</span>
+</div>
+<button class="inline-flex items-center gap-1 px-space-md h-8 rounded-DEFAULT bg-primary text-on-primary font-label-md text-label-md transition-all" id="preview-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span class="">打卡今日</span>
+</button>
+</div>
+</div>
+<!-- 模拟在全部习惯中的 7 天点阵走势卡片 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">近 7 天点阵预演</span>
+
+</div>
+<!-- 7天圆点打卡格矩阵示意 -->
+<div class="grid grid-cols-7 gap-1.5 py-space-xs">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">09/01</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">09/02</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">09/03</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">09/04</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">09/05</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">09/06</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-title-sm">今日</span>
+<div class="w-6 h-6 rounded-DEFAULT bg-secondary-container flex items-center justify-center transition-all" id="dot-today">
+<span class="w-2 h-2 rounded-full bg-secondary" id="dot-today-inner"></span>
+</div>
+</div>
+</div>
+
+</div>
+<!-- 规则说明卡片 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-on-surface font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span class="">打卡业务规则说明</span>
+</div>
+<ul class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-1 list-disc list-inside">
+<li class="">首版频率均为每日一次打卡机制。</li>
+<li class="">无论何时建立，当日均享有完整的打卡与补卡权益。</li>
+<li class="">如不再执行，可在「全部习惯」中随时归档，绝不丢失历史记录。</li>
+</ul>
+</div>
+</div>
+<!-- 快速保存提交操作栏 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<button class="w-full h-10 rounded-DEFAULT bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-all shadow-sm" id="btn-submit-and-check" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="">保存并直接打卡今日</span>
+</button>
+<button class="w-full h-10 rounded-DEFAULT bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg flex items-center justify-center gap-1 transition-all" id="btn-submit-only" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span class="">保存并返回习惯列表</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 轻量本地存盘通知 Toast (默认隐藏) -->
+<div class="fixed bottom-6 right-8 z-50 transform transition-all duration-300 flex items-center gap-space-sm px-space-lg py-space-md rounded-lg bg-inverse-surface text-inverse-on-surface shadow-xl translate-y-20 opacity-0 pointer-events-none" id="toast-notify">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">database</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm" id="toast-title">日常微习惯已写入本地库</span>
+<span class="font-body-sm text-body-sm opacity-80" id="toast-sub">已立即在今日工作台与全部习惯列表开启追踪</span>
+</div>
+</div>
+</div>
+<script>
+  (function initHabitForm() {
+    const nameInput = document.getElementById('habit-name-input');
+    const nameCounter = document.getElementById('name-counter');
+    const mvaInput = document.getElementById('habit-mva-input');
+    const descInput = document.getElementById('habit-desc-input');
+    const descCounter = document.getElementById('desc-counter');
+
+    const previewTitle = document.getElementById('preview-title');
+    const previewMva = document.getElementById('preview-mva');
+    const previewDomainBadge = document.getElementById('preview-domain-badge');
+    const previewSlotBadge = document.getElementById('preview-slot-badge');
+    const previewToggleBtn = document.getElementById('preview-toggle-btn');
+    const previewStatusText = document.getElementById('preview-status-text');
+    const dotToday = document.getElementById('dot-today');
+    const dotTodayInner = document.getElementById('dot-today-inner');
+
+    const domainSelector = document.getElementById('domain-selector');
+    const slotSelector = document.getElementById('slot-selector');
+    const presetPills = document.querySelectorAll('.preset-pill');
+
+    let currentCheckedState = false;
+
+    // 字符数计数器与实时预览
+    function updateName() {
+      const len = nameInput.value.length;
+      nameCounter.textContent = `${len} / 80 字`;
+      previewTitle.textContent = nameInput.value.trim() || '未命名习惯';
+    }
+
+    function updateDesc() {
+      const len = descInput.value.length;
+      descCounter.textContent = `${len} / 500 字`;
+    }
+
+    function updateMva() {
+      const txt = mvaInput.value.trim();
+      previewMva.innerHTML = `
+        <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span>
+        <span>基准：${txt || '哪怕行动1次也算达成'}</span>
+      `;
+    }
+
+    nameInput.addEventListener('input', updateName);
+    descInput.addEventListener('input', updateDesc);
+    mvaInput.addEventListener('input', updateMva);
+
+    // 领域选择切换
+    domainSelector.addEventListener('click', (e) => {
+      const btn = e.target.closest('.domain-btn');
+      if (!btn) return;
+
+      domainSelector.querySelectorAll('.domain-btn').forEach(b => {
+        b.classList.remove('active', 'bg-surface-container-highest', 'text-on-surface', 'font-title-sm');
+        b.classList.add('bg-surface-container-low', 'text-on-surface-variant', 'font-body-md');
+        const checkIcon = b.querySelector('.material-symbols-outlined');
+        if (checkIcon) checkIcon.remove();
+      });
+
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant', 'font-body-md');
+      btn.classList.add('active', 'bg-surface-container-highest', 'text-on-surface', 'font-title-sm');
+      
+      const icon = document.createElement('span');
+      icon.className = 'material-symbols-outlined text-[16px]';
+      icon.textContent = 'check';
+      btn.appendChild(icon);
+
+      const val = btn.getAttribute('data-value');
+      previewDomainBadge.textContent = val;
+    });
+
+    // 时段选择切换
+    slotSelector.addEventListener('change', (e) => {
+      if (e.target && e.target.name === 'habit_slot') {
+        const val = e.target.value;
+        previewSlotBadge.textContent = val;
+
+        slotSelector.querySelectorAll('.slot-card').forEach(card => {
+          card.classList.remove('bg-surface-container-highest');
+          card.classList.add('bg-surface-container-low');
+        });
+        const currentCard = e.target.closest('.slot-card');
+        if (currentCard) {
+          currentCard.classList.remove('bg-surface-container-low');
+          currentCard.classList.add('bg-surface-container-highest');
+        }
+      }
+    });
+
+    // 预设模版快速套用
+    presetPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const text = pill.getAttribute('data-preset');
+        const domain = pill.getAttribute('data-domain');
+        const slot = pill.getAttribute('data-slot');
+
+        nameInput.value = text;
+        updateName();
+
+        // 匹配领域
+        const targetDomainBtn = domainSelector.querySelector(`[data-value="${domain}"]`);
+        if (targetDomainBtn) targetDomainBtn.click();
+
+        // 匹配时段
+        const targetRadio = slotSelector.querySelector(`input[value="${slot}"]`);
+        if (targetRadio) {
+          targetRadio.checked = true;
+          targetRadio.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      });
+    });
+
+    // 预览卡片模拟打卡行为
+    previewToggleBtn.addEventListener('click', () => {
+      currentCheckedState = !currentCheckedState;
+      if (currentCheckedState) {
+        previewToggleBtn.classList.remove('bg-primary', 'text-on-primary');
+        previewToggleBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        previewToggleBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[16px]">check_circle</span>
+          <span>今日已达成</span>
+        `;
+        previewStatusText.textContent = '已打卡 (100%)';
+        previewStatusText.classList.add('text-secondary');
+        dotToday.classList.remove('bg-secondary-container');
+        dotToday.classList.add('bg-secondary');
+        dotTodayInner.classList.remove('bg-secondary');
+        dotTodayInner.classList.add('bg-on-secondary');
+      } else {
+        previewToggleBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        previewToggleBtn.classList.add('bg-primary', 'text-on-primary');
+        previewToggleBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+          <span>打卡今日</span>
+        `;
+        previewStatusText.textContent = '待执行';
+        previewStatusText.classList.remove('text-secondary');
+        dotToday.classList.remove('bg-secondary');
+        dotToday.classList.add('bg-secondary-container');
+        dotTodayInner.classList.remove('bg-on-secondary');
+        dotTodayInner.classList.add('bg-secondary');
+      }
+    });
+
+    // 提示 Toast 逻辑
+    const toast = document.getElementById('toast-notify');
+    const toastTitle = document.getElementById('toast-title');
+    const toastSub = document.getElementById('toast-sub');
+
+    function showToast(title, sub) {
+      toastTitle.textContent = title;
+      toastSub.textContent = sub;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 2400);
+    }
+
+    document.getElementById('btn-submit-top').addEventListener('click', () => {
+      showToast('日常微习惯已写入本地库', '已立即在今日工作台与全部习惯列表开启追踪');
+    });
+
+    document.getElementById('btn-submit-and-check').addEventListener('click', () => {
+      showToast('建立成功并完成今日打卡', '已记录今日第 1 次执行记录，点阵连续天数 +1');
+    });
+
+    document.getElementById('btn-submit-only').addEventListener('click', () => {
+      showToast('习惯已建立并已归档', '正在返回全部习惯管理面板...');
+    });
+
+    // 初始化运行一次
+    updateName();
+    updateDesc();
+    updateMva();
+  })();
+</script></main></div>
+
+</body></html>

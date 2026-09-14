@@ -1,0 +1,50 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#1d3e72"/>
+      <stop offset="0.55" stop-color="#13294d"/>
+      <stop offset="1" stop-color="#0a1830"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.30" r="0.75">
+      <stop offset="0" stop-color="#3f73c4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3f73c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6aa6ff"/>
+      <stop offset="1" stop-color="#3a78e6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3f7fd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App tile -->
+  <rect x="86" y="86" width="852" height="852" rx="212" fill="url(#bg)"/>
+  <rect x="86" y="86" width="852" height="852" rx="212" fill="url(#glow)"/>
+  <rect x="87" y="87" width="850" height="850" rx="211" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+
+  <!-- Soft shadow under the card -->
+  <rect x="190" y="296" width="644" height="476" rx="72" fill="#000000" opacity="0.18"/>
+
+  <!-- White workbench card (enlarged, more filling) -->
+  <rect x="178" y="284" width="668" height="488" rx="76" fill="url(#card)"/>
+
+  <!-- Check circle (done goal/task) -->
+  <circle cx="300" cy="392" r="58" fill="url(#accent)"/>
+  <path d="M274 392 l18 18 l35 -39" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Title lines -->
+  <rect x="410" y="372" width="386" height="32" rx="16" fill="#cdddf2"/>
+  <rect x="410" y="416" width="262" height="22" rx="11" fill="#e2eaf6"/>
+
+  <!-- Checklist rows -->
+  <rect x="232" y="488" width="560" height="60" rx="30" fill="#edf2fb"/>
+  <rect x="232" y="566" width="560" height="60" rx="30" fill="#edf2fb"/>
+  <rect x="232" y="644" width="560" height="60" rx="30" fill="#edf2fb"/>
+
+  <!-- Accent dots marking status -->
+  <circle cx="282" cy="518" r="16" fill="url(#accent)"/>
+  <circle cx="282" cy="596" r="16" fill="#cdd9ec"/>
+  <circle cx="282" cy="674" r="16" fill="#cdd9ec"/>
+</svg>

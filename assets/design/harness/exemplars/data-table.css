@@ -1,0 +1,117 @@
+/* ============================================================
+ * EXEMPLAR · 数据表格
+ *
+ * 本项目最核心的信息呈现方式。
+ * 数据密集场景下表格永远优于卡片墙——用户熟悉信息结构，
+ * 不需要卡片提供的"视觉分组辅助"。
+ *
+ * 要点：
+ *   1. 用边框建立层次，阴影只给真正的浮层
+ *   2. 行高 54px，兼顾密度与点击舒适度
+ *   3. hover 只改背景色，绝不位移或缩放
+ *   4. 表头用 --soft 底 + --muted 字，弱化后让数据说话
+ *   5. 全部走 token，暗色自动适配，无需 .dark 覆写
+ * ============================================================ */
+
+.dtable {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--app-bg);
+  overflow: hidden;
+}
+
+/* 表头与数据行共享栅格定义，保证列对齐 */
+.dtable__head,
+.dtable__row {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.6fr) 120px 120px 100px;
+  align-items: center;
+  gap: var(--gap);
+  padding: 0 var(--gap-md);
+}
+
+.dtable__head {
+  min-height: 39px;
+  background: var(--soft);
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+}
+
+.dtable__row {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--app-bg);
+  color: var(--text);
+  font-size: var(--text-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.dtable__row:last-child {
+  border-bottom: 0;
+}
+
+.dtable__row:hover {
+  background: var(--soft-hover);
+}
+
+/* 主列：标题 + 副标题。用 min-width:0 保证省略号生效 */
+.dtable__primary {
+  min-width: 0;
+}
+
+.dtable__primary strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.dtable__primary small {
+  display: block;
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.dtable__meta {
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+}
+
+.dtable__time {
+  color: var(--muted);
+  font-size: var(--text-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 空状态：只说明没有数据，不解释概念——用户就是建造者 */
+.dtable__empty {
+  padding: var(--gap-xl) var(--gap-md);
+  color: var(--muted);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+/* 响应式：窄屏隐藏次要列，但绝不隐藏核心操作 */
+@media (max-width: 800px) {
+  .dtable__head,
+  .dtable__row {
+    grid-template-columns: minmax(0, 1fr) 100px;
+    padding: 0 12px;
+  }
+  .dtable__meta,
+  .dtable__time {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$meta": { "name": "Claude", "basedOn": "pgt-default", "note": "Coral #cc785c + Copernicus serif 标题 + 奶油底；圆角 8/12/16" },
+  "overrides": {
+    "--navy": { "light": "#cc785c", "dark": "#d98a6e" },
+    "--navy-strong": { "light": "#a9583e", "dark": "#a9583e" },
+    "--blue": { "light": "#cc785c", "dark": "#d98a6e" },
+    "--green": { "light": "#5db872", "dark": "#5db872" },
+    "--orange": { "light": "#d4a017", "dark": "#d4a017" },
+    "--red": { "light": "#c64545", "dark": "#c64545" },
+    "--text": { "light": "#141413", "dark": "#faf9f5" },
+    "--text-secondary": { "light": "#3d3d3a", "dark": "#e8e3d9" },
+    "--muted": { "light": "#6c6a64", "dark": "#a09d96" },
+    "--muted-light": { "light": "#8e8b82", "dark": "#8e8b82" },
+    "--app-bg": { "light": "#faf9f5", "dark": "#181715" },
+    "--soft": { "light": "#efe9de", "dark": "#252320" },
+    "--soft-hover": { "light": "#e8e0d2", "dark": "#2e2b27" },
+    "--border": { "light": "#e6dfd8", "dark": "#3a3631" },
+    "--border-light": { "light": "#ebe6df", "dark": "#2e2b27" },
+    "--violet": { "light": "#cc785c", "dark": "#d98a6e" },
+    "--violet-soft": { "light": "#f3e7df", "dark": "#2e211a" },
+    "--violet-border": { "light": "#e6cdbd", "dark": "#4a3326" },
+    "--violet-deep": { "light": "#a9583e", "dark": "#d98a6e" },
+    "--font-display": "Copernicus, Tiempos Headline, Garamond, 'Times New Roman', serif",
+    "--font-body": "StyreneB, Inter, system-ui, -apple-system, sans-serif",
+    "--font-mono": "JetBrains Mono, ui-monospace, monospace",
+    "--radius": "8px",
+    "--radius-sm": "6px",
+    "--radius-lg": "12px",
+    "--radius-xl": "16px",
+    "--radius-pill": "9999px",
+    "--radius-full": "9999px"
+  }
+}

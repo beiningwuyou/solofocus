@@ -1,0 +1,87 @@
+/* ============================================================
+ * EXEMPLAR · 按钮
+ *
+ * 这是标准答案，不是现状快照。
+ * 现有 .button 存在债务（font-weight:650、硬编码 8px、hover 位移），不要抄。
+ *
+ * 要点：
+ *   1. 所有值走 token
+ *   2. hover 只改颜色，不改位置——长时间使用中位移是干扰
+ *   3. 四个变体职责分明，不是所有按钮都设为 primary
+ *   4. 暗色靠 token 自动适配，不写 .dark 覆写
+ * ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 主操作。一屏最多一个 —— 全都是主要就等于都不主要 */
+.btn--primary {
+  background: var(--navy);
+  color: #ffffff;
+}
+.btn--primary:hover:not(:disabled) {
+  background: var(--navy-strong);
+}
+
+/* 次操作。默认选择，大多数按钮都该是这个 */
+.btn--secondary {
+  background: var(--app-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+.btn--secondary:hover:not(:disabled) {
+  background: var(--soft);
+  border-color: var(--muted-light);
+}
+
+/* 轻量操作。工具栏、行内操作 */
+.btn--ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+.btn--ghost:hover:not(:disabled) {
+  background: var(--soft);
+  color: var(--text);
+}
+
+/* 破坏性操作。仅用于删除、归档等不可逆动作 */
+.btn--danger {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--red);
+}
+.btn--danger:hover:not(:disabled) {
+  background: var(--red);
+  border-color: var(--red);
+  color: #ffffff;
+}
+
+/* 紧凑尺寸：表格行内、密集工具栏 */
+.btn--sm {
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+/* 焦点态由全局 :focus-visible 统一处理，此处不重复定义 */

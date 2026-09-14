@@ -1,0 +1,630 @@
+<!DOCTYPE html><html lang="zh-CN" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#cfc4c5","tertiary-container":"#001b3f","tertiary-fixed-dim":"#abc7ff","on-tertiary-container":"#4d83db","surface-tint":"#5e5e5e","outline":"#7e7576","inverse-primary":"#c6c6c6","on-primary-container":"#848484","on-primary":"#ffffff","inverse-on-surface":"#ebf1ff","on-primary-fixed-variant":"#474747","error":"#ba1a1a","surface-container-low":"#eff4ff","primary-fixed-dim":"#c6c6c6","primary":"#000000","surface-container-high":"#dde9ff","on-surface-variant":"#4c4546","on-error-container":"#93000a","surface":"#f8f9ff","background":"#f8f9ff","surface-bright":"#f8f9ff","on-secondary-fixed":"#00210c","on-secondary-fixed-variant":"#005226","on-tertiary":"#ffffff","on-secondary-container":"#0f743b","on-tertiary-fixed":"#001b3f","surface-container-lowest":"#ffffff","on-error":"#ffffff","surface-variant":"#d3e3ff","primary-container":"#1b1b1b","secondary-fixed-dim":"#7fda95","error-container":"#ffdad6","tertiary":"#000000","secondary-container":"#9bf7af","surface-container":"#e6eeff","on-tertiary-fixed-variant":"#00458f","secondary":"#016d35","on-background":"#0b1c30","on-secondary":"#ffffff","on-primary-fixed":"#1b1b1b","primary-fixed":"#e2e2e2","on-surface":"#0b1c30","surface-container-highest":"#d3e3ff","surface-dim":"#cbdbf6","tertiary-fixed":"#d7e3ff","inverse-surface":"#213146","secondary-fixed":"#9bf7af"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-tablet":"1.5rem","space-lg":"1rem",margin:"1rem","space-xs":"0.25rem","margin-desktop":"2rem","space-sm":"0.5rem","space-md":"0.75rem",gutter:"1rem","space-xl":"1.5rem","gutter-desktop":"1.25rem","gutter-mobile":"0.5rem"},fontFamily:{"title-md":["Manrope"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Manrope"],"headline-lg":["Manrope"],"title-sm":["Manrope"],"body-md":["Inter"],"headline-sm":["Manrope"],"body-sm":["Inter"],"headline-lg-mobile":["Manrope"],"body-lg":["Inter"],"label-sm":["Inter"]},fontSize:{"title-md":["15px",{lineHeight:"20px",fontWeight:"600"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-sm":["13px",{lineHeight:"18px",fontWeight:"600"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"12px",letterSpacing:"0.04em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-5 h-5 bg-primary rounded flex items-center justify-center"><span class="material-symbols-outlined text-[14px] text-on-primary">adjust</span></div><span class="font-title-md text-title-md text-primary tracking-tight font-bold">SoloFocus</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest pl-space-xs">个人心流调度台</span></div><nav class="flex flex-col gap-space-xs px-space-md py-space-sm" data-active-classes="bg-surface-container-highest text-on-surface font-title-sm font-semibold rounded"><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors text-title-sm" data-path="today-workspace" href="#"><span class="material-symbols-outlined text-[18px]">schedule</span><span class="">今日工作台</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors text-on-surface-variant" data-path="all-tasks" href="#"><span class="material-symbols-outlined text-[18px]">checklist</span><span class="">全部任务</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors text-title-sm" data-path="all-projects" href="#"><span class="material-symbols-outlined text-[18px]">folder_open</span><span class="">全部项目</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors text-title-sm" data-path="domains-and-goals" href="#"><span class="material-symbols-outlined text-[18px]">track_changes</span><span class="">领域与目标</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors text-title-sm" data-path="habit-tracking" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span class="">习惯打卡</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm hover:bg-surface-container-high hover:text-on-surface rounded transition-colors font-title-sm text-title-sm bg-surface-container-highest text-on-surface font-semibold" data-path="sop-knowledge-base" href="#"><span class="material-symbols-outlined text-[18px]">menu_book</span><span class="">SOP 知识库</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="bg-surface-container-lowest px-space-md py-space-sm rounded flex items-center justify-between shadow-[0_1px_2px_rgba(11,28,48,0.04)]"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">SQLite 本地存储</span></div><span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">运行正常 · WAL</span></div><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors font-title-sm text-title-sm" data-path="settings-backup" href="#"><span class="material-symbols-outlined text-[18px]">settings_backup_restore</span><span class="">设置与备份归档</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-14 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-[18px] text-outline pointer-events-none">search</span><input class="w-full h-8 pl-9 pr-space-md bg-surface-container-lowest rounded text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="搜索任务、项目或 SOP... (快捷键 / )" type="text"></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs px-space-md py-1 bg-surface-container rounded text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-md text-label-md font-semibold">2026年9月7日 星期一 · 第34周</span></div><div class="flex items-center gap-space-xs"><button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="筛选模式" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="运行通知" type="button"><span class="material-symbols-outlined text-[18px]">notifications_none</span></button></div></div></div></header><main class="w-full pt-14 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-lg flex flex-col gap-space-lg max-w-[1520px] mx-auto w-full">
+<!-- 顶部全局面包屑与控制栏 -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+
+
+
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">全部 SOP&nbsp;</h1>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          将高频重复流程沉淀为步骤清单 · 一键分派并复制至任务独立运行
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span>
+<span class="">从备份导入</span>
+</button>
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">新建 SOP 模板</span>
+</button>
+</div>
+</div>
+<!-- 顶部统计指标卡片 (4张高密冷色调度卡) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 指标 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface-variant font-medium">模板数</span>
+<span class="w-6 h-6 rounded bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">个规范模板</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+
+
+</div>
+</div>
+<!-- 指标 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface-variant font-medium">历史派生执行</span>
+<span class="w-6 h-6 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">fork_right</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">42</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">次任务清单实例化</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+
+
+</div>
+</div>
+<!-- 指标 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface-variant font-medium">步骤总节点规模</span>
+<span class="w-6 h-6 rounded bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[14px]">format_list_numbered</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">33</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">个已固化检查步</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+
+
+</div>
+</div>
+<!-- 指标 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface-variant font-medium">支撑领域</span>
+<span class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[14px]">domain</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">个核心长期领域</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+
+
+</div>
+</div>
+</div>
+<!-- 筛选过滤与控制行 -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- 类别 Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 lg:pb-0" id="sop-category-tabs">
+<button class="px-space-md py-1.5 rounded bg-surface-container-highest text-on-surface font-title-sm text-title-sm font-semibold transition-colors shrink-0" data-category="all" type="button">
+          全部模板 (6)
+        </button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors shrink-0" data-category="frequent" type="button">
+          常用高频 (2)
+        </button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors shrink-0" data-category="quality" type="button">
+          质量与工程 (2)
+        </button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors shrink-0" data-category="delivery" type="button">
+          交付与复盘 (2)
+        </button>
+</div>
+<!-- 搜索框与排序器 -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="relative w-full sm:w-72">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-[16px] text-outline pointer-events-none">search</span>
+<input class="w-full h-8 pl-8 pr-space-sm bg-surface-container-low rounded text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="sop-search-input" placeholder="搜索模板名称、领域或步骤关键字..." type="text">
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-space-xs py-1 rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-1">排序:</span>
+<select class="bg-transparent text-body-sm font-title-sm text-on-surface font-medium focus:outline-none pr-space-xs cursor-pointer" id="sop-sort-select">
+<option value="frequency">按使用频次降序</option>
+<option value="steps">按步骤节点数量</option>
+<option value="updated">按最近修改更新</option>
+</select>
+</div>
+</div>
+</div>
+<!-- 核心内容：SOP 模板全景卡片网格 (2列宽幅架构，高信息密度流水) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md" id="sop-cards-container">
+<!-- 卡片 1：周复盘与规划流程 -->
+
+<!-- 卡片 2：界面排版与视觉自检 -->
+
+<!-- 卡片 3：SQLite 本地迁移与备份校验 -->
+
+<!-- 卡片 4：敏捷版本自用发布准备 -->
+
+<!-- 卡片 5：技术深度阅读与知识萃取 -->
+
+<!-- 卡片 6：月度目标对齐与长期愿景校准 -->
+
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between gap-space-md group" data-category="frequent delivery" data-steps="6" data-usage="28" style="display: flex;">
+<div class="flex flex-col gap-space-sm">
+<!-- 头部标签与引用活跃态 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">个人效能系统</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                高频例行
+              </span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">sync</span>
+<span class="font-semibold text-secondary">2 个任务执行中</span>
+</div>
+</div>
+<!-- 标题与简述 -->
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">周复盘与规划流程</h2>
+<span class="font-title-sm text-title-sm text-on-surface-variant">6 节点</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">每周日晚间运行的标准系统整理与心流重置机制，保障目标对齐与单机数据归档。</p>
+</div>
+<!-- 步骤流水胶囊流 (横向流式高密度布局) -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold flex items-center justify-between">
+<span class="">标准化检查链条 (按序流转)</span>
+<span class="text-on-surface-variant">顺序执行</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">01</span>清空收件箱
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">02</span>清理逾期与遗留
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">03</span>核心项目进展对齐
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">04</span>更新近7天度量指标
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">05</span>锁定下周3个核心任务
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">06</span>SQLite 数据备份
+              </span>
+</div>
+</div>
+</div>
+<!-- 底部派生统计与操作按钮 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">history</span>
+<span class="">累计派生调用 <strong class="text-on-surface font-bold">28 次</strong></span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm transition-colors" type="button">
+              查看详情与编辑步骤
+            </button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span class="">应用到新任务</span>
+</button>
+</div>
+</div>
+</div><div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between gap-space-md group" data-category="quality frequent" data-steps="5" data-usage="6" style="display: flex;">
+<div class="flex flex-col gap-space-sm">
+<!-- 头部标签与引用活跃态 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">质量与工程</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">交付前检核</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">sync</span>
+<span class="font-semibold text-secondary">1 个任务执行中</span>
+</div>
+</div>
+<!-- 标题与简述 -->
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">界面排版与视觉自检</h2>
+<span class="font-title-sm text-title-sm text-on-surface-variant">5 节点</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">执行严苛的纯净工程检查规范，杜绝一切无关噪音并确保高对比度排版无缺陷。</p>
+</div>
+<!-- 步骤流水胶囊流 -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold flex items-center justify-between">
+<span class="">标准化检查链条 (按序流转)</span>
+<span class="text-on-surface-variant">顺序执行</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">01</span>响应式布局自适应检验
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">02</span>中文字体排版与间距审查
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">03</span>移除无用英文噪点
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">04</span>交互按钮反馈测试
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">05</span>高保真色彩与对比度核验
+              </span>
+</div>
+</div>
+</div>
+<!-- 底部派生统计与操作按钮 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">history</span>
+<span class="">累计派生调用 <strong class="text-on-surface font-bold">6 次</strong></span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm transition-colors" type="button">
+              查看详情与编辑步骤
+            </button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span class="">应用到新任务</span>
+</button>
+</div>
+</div>
+</div><div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between gap-space-md group" data-category="quality" data-steps="4" data-usage="5" style="display: flex;">
+<div class="flex flex-col gap-space-sm">
+<!-- 头部标签与引用活跃态 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">系统与架构</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">运维保障</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="">当前 0 个任务使用中</span>
+</div>
+</div>
+<!-- 标题与简述 -->
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">SQLite 本地迁移与备份校验</h2>
+<span class="font-title-sm text-title-sm text-on-surface-variant">4 节点</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">保障单机离线数据完整性，结构演进前必须严格执行的日志核验与快照验证流程。</p>
+</div>
+<!-- 步骤流水胶囊流 -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold flex items-center justify-between">
+<span class="">标准化检查链条 (按序流转)</span>
+<span class="text-on-surface-variant">顺序执行</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">01</span>WAL日志完整性核验
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">02</span>生成临时 JSON 快照
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">03</span>模式字段比对与迁移回滚演练
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">04</span>导出持久化归档包
+              </span>
+</div>
+</div>
+</div>
+<!-- 底部派生统计与操作按钮 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">history</span>
+<span class="">累计派生调用 <strong class="text-on-surface font-bold">5 次</strong></span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm transition-colors" type="button">
+              查看详情与编辑步骤
+            </button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span class="">应用到新任务</span>
+</button>
+</div>
+</div>
+</div><div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between gap-space-md group" data-category="delivery" data-steps="8" data-usage="3" style="display: flex;">
+<div class="flex flex-col gap-space-sm">
+<!-- 头部标签与引用活跃态 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">工作与交付</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">发版流水</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="">当前 0 个任务使用中</span>
+</div>
+</div>
+<!-- 标题与简述 -->
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">敏捷版本自用发布准备</h2>
+<span class="font-title-sm text-title-sm text-on-surface-variant">8 节点</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">全功能单兵验收与发布流水线，确保自用分发环境构建纯净且零回归隐患。</p>
+</div>
+<!-- 步骤流水胶囊流 -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold flex items-center justify-between">
+<span class="">标准化检查链条 (按序流转)</span>
+<span class="text-on-surface-variant">顺序执行</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">01</span>功能验收清单逐项勾选
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">02</span>生产环境体积构建优化
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">03</span>离线单机资源包自检
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">04</span>更新版本说明
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">05</span>标记发布归档
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">... 剩余3步</span>
+</div>
+</div>
+</div>
+<!-- 底部派生统计与操作按钮 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">history</span>
+<span class="">累计派生调用 <strong class="text-on-surface font-bold">3 次</strong></span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm transition-colors" type="button">
+              查看详情与编辑步骤
+            </button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span class="">应用到新任务</span>
+</button>
+</div>
+</div>
+</div><div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between gap-space-md group" data-category="learning" data-steps="5" data-usage="0" style="display: flex;">
+<div class="flex flex-col gap-space-sm">
+<!-- 头部标签与引用活跃态 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">学习与成长</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">认知输入</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">新建模板</span>
+</div>
+</div>
+<!-- 标题与简述 -->
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">技术深度阅读与知识萃取</h2>
+<span class="font-title-sm text-title-sm text-on-surface-variant">5 节点</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">针对硬核书籍、白皮书与架构论文的知识转化工作流，将输入提炼为长效资产。</p>
+</div>
+<!-- 步骤流水胶囊流 -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold flex items-center justify-between">
+<span class="">标准化检查链条 (按序流转)</span>
+<span class="text-on-surface-variant">顺序执行</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">01</span>快速通读并标记核心论点
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">02</span>提取关键代码模型或架构图
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">03</span>编写 300 字自用实践思考
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">04</span>沉淀至个人知识库
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">05</span>设定后续验证任务
+              </span>
+</div>
+</div>
+</div>
+<!-- 底部派生统计与操作按钮 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">history</span>
+<span class="">累计派生调用 <strong class="text-on-surface font-bold">0 次</strong> (等待首次分配)</span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm transition-colors" type="button">
+              查看详情与编辑步骤
+            </button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span class="">应用到新任务</span>
+</button>
+</div>
+</div>
+</div><div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between gap-space-md group" data-category="delivery" data-steps="5" data-usage="0" style="display: flex;">
+<div class="flex flex-col gap-space-sm">
+<!-- 头部标签与引用活跃态 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">个人效能系统</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">战略复盘</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">新建模板</span>
+</div>
+</div>
+<!-- 标题与简述 -->
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">月度目标对齐与长期愿景校准</h2>
+<span class="font-title-sm text-title-sm text-on-surface-variant">5 节点</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">每月初执行的顶层视角再校准，纠偏微观执行与宏观领域目标的偏离度。</p>
+</div>
+<!-- 步骤流水胶囊流 -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold flex items-center justify-between">
+<span class="">标准化检查链条 (按序流转)</span>
+<span class="text-on-surface-variant">顺序执行</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">01</span>盘点各领域月度推进现状
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">02</span>识别停滞与高风险项目
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">03</span>重新审视长期目标优先级
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">04</span>调整资源分配与习惯配置
+              </span>
+<span class="text-on-surface-variant text-[12px] self-center">→</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm flex items-center gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">05</span>归档已终结目标
+              </span>
+</div>
+</div>
+</div>
+<!-- 底部派生统计与操作按钮 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">history</span>
+<span class="">累计派生调用 <strong class="text-on-surface font-bold">0 次</strong> (等待首次分配)</span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-title-sm text-title-sm transition-colors" type="button">
+              查看详情与编辑步骤
+            </button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span class="">应用到新任务</span>
+</button>
+</div>
+</div>
+</div></div>
+<!-- 底部 PRD 业务规则提示条 -->
+
+</div>
+</div>
+<script>
+  (function() {
+    // 激活左侧全局导航中当前「SOP 知识库」菜单项
+    const asideNav = document.querySelector('aside nav');
+    if (asideNav) {
+      const activeClasses = (asideNav.getAttribute('data-active-classes') || 'bg-surface-container-highest text-on-surface font-title-sm font-semibold rounded').split(' ');
+      const links = asideNav.querySelectorAll('a[data-path]');
+      links.forEach(link => {
+        if (link.getAttribute('data-path') === 'sop-knowledge-base') {
+          link.classList.add(...activeClasses);
+          link.classList.remove('text-on-surface-variant');
+        } else {
+          link.classList.remove(...activeClasses);
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    // 分类筛选 Tabs 交互
+    const tabButtons = document.querySelectorAll('#sop-category-tabs button');
+    const cards = document.querySelectorAll('#sop-cards-container > div');
+    const searchInput = document.getElementById('sop-search-input');
+    const sortSelect = document.getElementById('sop-sort-select');
+    const container = document.getElementById('sop-cards-container');
+
+    let currentCategory = 'all';
+
+    function filterAndSort() {
+      const query = (searchInput.value || '').trim().toLowerCase();
+      
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const categories = (card.getAttribute('data-category') || '').split(' ');
+        const matchesCat = (currentCategory === 'all') || categories.includes(currentCategory);
+        const matchesQuery = !query || text.includes(query);
+
+        if (matchesCat && matchesQuery) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // 排序
+      const sortMode = sortSelect.value;
+      const visibleCards = Array.from(cards);
+      visibleCards.sort((a, b) => {
+        if (sortMode === 'frequency') {
+          return parseInt(b.getAttribute('data-usage') || 0) - parseInt(a.getAttribute('data-usage') || 0);
+        } else if (sortMode === 'steps') {
+          return parseInt(b.getAttribute('data-steps') || 0) - parseInt(a.getAttribute('data-steps') || 0);
+        }
+        return 0;
+      });
+      visibleCards.forEach(c => container.appendChild(c));
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.className = 'px-space-md py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors shrink-0';
+        });
+        btn.className = 'px-space-md py-1.5 rounded bg-surface-container-highest text-on-surface font-title-sm text-title-sm font-semibold transition-colors shrink-0';
+        currentCategory = btn.getAttribute('data-category');
+        filterAndSort();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterAndSort);
+    }
+
+    if (sortSelect) {
+      sortSelect.addEventListener('change', filterAndSort);
+    }
+  })();
+</script></main></div>
+
+</body></html>

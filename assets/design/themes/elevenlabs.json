@@ -1,0 +1,32 @@
+{
+  "$meta": { "name": "ElevenLabs", "basedOn": "pgt-default", "note": "近黑墨 #292524 + Waldenburg Light serif + 灰白底；克制、无饱和 CTA" },
+  "overrides": {
+    "--navy": { "light": "#292524", "dark": "#57534e" },
+    "--navy-strong": { "light": "#0c0a09", "dark": "#44403c" },
+    "--blue": { "light": "#292524", "dark": "#a8a29e" },
+    "--green": { "light": "#16a34a", "dark": "#16a34a" },
+    "--red": { "light": "#dc2626", "dark": "#dc2626" },
+    "--text": { "light": "#0c0a09", "dark": "#ffffff" },
+    "--text-secondary": { "light": "#4e4e4e", "dark": "#e8e8e8" },
+    "--muted": { "light": "#777169", "dark": "#a8a29e" },
+    "--muted-light": { "light": "#a8a29e", "dark": "#8a8580" },
+    "--app-bg": { "light": "#f5f5f5", "dark": "#0c0a09" },
+    "--soft": { "light": "#ffffff", "dark": "#1c1917" },
+    "--soft-hover": { "light": "#f0efed", "dark": "#292524" },
+    "--border": { "light": "#e7e5e4", "dark": "#3a3632" },
+    "--border-light": { "light": "#f0efed", "dark": "#292524" },
+    "--violet": { "light": "#292524", "dark": "#57534e" },
+    "--violet-soft": { "light": "#efeae6", "dark": "#211d1a" },
+    "--violet-border": { "light": "#d6d3d1", "dark": "#3a3632" },
+    "--violet-deep": { "light": "#0c0a09", "dark": "#a8a29e" },
+    "--font-display": "'Waldenburg', 'Times New Roman', serif",
+    "--font-body": "'Inter', system-ui, -apple-system, sans-serif",
+    "--font-mono": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "--radius": "8px",
+    "--radius-sm": "6px",
+    "--radius-lg": "12px",
+    "--radius-xl": "16px",
+    "--radius-pill": "9999px",
+    "--radius-full": "9999px"
+  }
+}

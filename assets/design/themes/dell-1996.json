@@ -1,0 +1,30 @@
+{
+  "$meta": { "name": "Dell 1996", "basedOn": "pgt-default", "note": "红 #e91d2a + 黑框 + Times/Arial Black；全部圆角 0（90 年代产品目录）" },
+  "overrides": {
+    "--navy": { "light": "#e91d2a", "dark": "#ff3b47" },
+    "--navy-strong": { "light": "#b3161f", "dark": "#ff3b47" },
+    "--blue": { "light": "#0000ee", "dark": "#5b6bff" },
+    "--text": { "light": "#000000", "dark": "#ffffff" },
+    "--text-secondary": { "light": "#000000", "dark": "#e8e8e8" },
+    "--muted": { "light": "#000000", "dark": "#cccccc" },
+    "--muted-light": { "light": "#555555", "dark": "#999999" },
+    "--app-bg": { "light": "#ffffff", "dark": "#000000" },
+    "--soft": { "light": "#ffffff", "dark": "#0a0a0a" },
+    "--soft-hover": { "light": "#f0f0f0", "dark": "#1a1a1a" },
+    "--border": { "light": "#000000", "dark": "#ffffff" },
+    "--border-light": { "light": "#000000", "dark": "#ffffff" },
+    "--violet": { "light": "#e91d2a", "dark": "#ff3b47" },
+    "--violet-soft": { "light": "#ffe0e0", "dark": "#2a0a0c" },
+    "--violet-border": { "light": "#e91d2a", "dark": "#5a1015" },
+    "--violet-deep": { "light": "#b3161f", "dark": "#ff3b47" },
+    "--font-display": "Arial Black, 'Arial Bold', Gadget, sans-serif",
+    "--font-body": "'Times New Roman', Times, serif",
+    "--font-mono": "'Courier New', Courier, monospace",
+    "--radius": "0px",
+    "--radius-sm": "0px",
+    "--radius-lg": "0px",
+    "--radius-xl": "0px",
+    "--radius-pill": "0px",
+    "--radius-full": "9999px"
+  }
+}

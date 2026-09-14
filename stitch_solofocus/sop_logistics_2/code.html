@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="zh-CN" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline": "#7e7576",
+          "surface-container-highest": "#d3e3ff",
+          "on-tertiary-fixed-variant": "#00458f",
+          "surface-container-low": "#eff4ff",
+          "primary": "#000000",
+          "tertiary-container": "#001b3f",
+          "secondary": "#016d35",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#001b3f",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "secondary-container": "#9bf7af",
+          "primary-fixed": "#e2e2e2",
+          "on-secondary-fixed": "#00210c",
+          "surface-tint": "#5e5e5e",
+          "surface-container-lowest": "#ffffff",
+          "inverse-primary": "#c6c6c6",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-bright": "#f8f9ff",
+          "surface-dim": "#cbdbf6",
+          "on-surface-variant": "#4c4546",
+          "on-secondary-container": "#0f743b",
+          "on-background": "#0b1c30",
+          "on-surface": "#0b1c30",
+          "surface-variant": "#d3e3ff",
+          "primary-container": "#1b1b1b",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary": "#ffffff",
+          "surface": "#f8f9ff",
+          "primary-fixed-dim": "#c6c6c6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#005226",
+          "surface-container": "#e6eeff",
+          "surface-container-high": "#dde9ff",
+          "tertiary-fixed-dim": "#abc7ff",
+          "background": "#f8f9ff",
+          "secondary-fixed-dim": "#7fda95",
+          "on-tertiary-container": "#4d83db",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#213146",
+          "tertiary": "#000000",
+          "on-primary-container": "#848484",
+          "tertiary-fixed": "#d7e3ff",
+          "outline-variant": "#cfc4c5",
+          "on-error": "#ffffff",
+          "inverse-on-surface": "#ebf1ff",
+          "secondary-fixed": "#9bf7af"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "0.75rem",
+          "gutter-mobile": "0.5rem",
+          "margin": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1rem",
+          "margin-desktop": "2rem",
+          "margin-tablet": "1.5rem",
+          "gutter-desktop": "1.25rem",
+          "space-xl": "1.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Manrope"],
+          "body-lg": ["Inter"],
+          "title-sm": ["Manrope"],
+          "label-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "body-sm": ["Inter"],
+          "headline-sm": ["Manrope"],
+          "label-sm": ["Inter"],
+          "headline-lg-mobile": ["Manrope"],
+          "label-md": ["Inter"],
+          "title-md": ["Manrope"],
+          "headline-md": ["Manrope"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "title-sm": ["13px", {"lineHeight": "18px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-sm": ["11px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "label-md": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "title-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">target</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">SoloFocus</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Personal Workspace</span></div></div><div class="px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="today-desk" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="">今日工作台</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg transition-colors bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]" data-path="all-tasks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="">全部任务</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="all-projects" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="">全部项目</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="domains-and-goals" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span class="">领域与目标</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="habit-tracker" href="#"><span class="material-symbols-outlined text-[20px]">repeat</span><span class="">习惯打卡</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sop-knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="">SOP 知识库</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">database</span><span class="font-label-md text-label-md text-on-surface">SQLite 本地存储</span></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>ACTIVE</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">设置 (备份与归档)</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline rounded-lg outline-none transition-all focus:bg-surface-container-lowest" placeholder="全局快速检索 (按 ⌘K 定位)..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_today</span><span class="">2026年9月7日 星期一 · 第34周</span></div><button aria-label="通知" class="relative p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button></div></header><main class="w-full pt-14 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full relative">
+<!-- Background Context: Filter Bar & High-Density Operational Task Table -->
+<div class="w-full flex flex-col gap-space-md opacity-40 blur-[2px] pointer-events-none select-none transition-all duration-300">
+<!-- Top Filter Bar -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">全部任务清单</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-label-sm text-label-sm">共 18 项载荷</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1.5 rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">filter_list</span>
+<span class="font-label-md text-label-md text-on-surface">状态: 全部运行中</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1.5 rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">sort</span>
+<span class="font-label-md text-label-md text-on-surface">排序: 计划时效</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Table Base -->
+<div class="w-full bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header -->
+<div class="grid grid-cols-12 bg-surface-container-low px-space-md py-space-xs items-center">
+<div class="col-span-1 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">编号</div>
+<div class="col-span-4 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">任务名称与关联实体</div>
+<div class="col-span-2 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">所属项目</div>
+<div class="col-span-2 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">交付期限</div>
+<div class="col-span-1 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">工时</div>
+<div class="col-span-2 font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-right">状态控制</div>
+</div>
+<!-- Dummy Row 1 (Target Task) -->
+<div class="grid grid-cols-12 px-space-md py-space-sm items-center bg-surface-container-high">
+<div class="col-span-1 font-label-sm text-label-sm text-on-surface font-semibold">#T-0941</div>
+<div class="col-span-4 flex items-center gap-space-xs">
+<div class="w-4 h-4 rounded-DEFAULT bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px]">sync</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface">配置 Vite 生产环境包体积压缩插件</span>
+</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface">开发 SoloFocus</div>
+<div class="col-span-2 font-label-md text-label-md text-error font-medium">今日 18:00 (临期)</div>
+<div class="col-span-1 font-body-md text-body-md text-on-surface-variant">45m</div>
+<div class="col-span-2 flex justify-end">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>进行中
+          </span>
+</div>
+</div>
+<!-- Dummy Row 2 -->
+<div class="grid grid-cols-12 px-space-md py-space-sm items-center hover:bg-surface-container-low transition-colors">
+<div class="col-span-1 font-label-sm text-label-sm text-outline">#T-0942</div>
+<div class="col-span-4 font-body-md text-body-md text-on-surface">重构 SQLite 本地事务日志回滚机制</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface-variant">开发 SoloFocus</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface-variant">明日 12:00</div>
+<div class="col-span-1 font-body-md text-body-md text-on-surface-variant">120m</div>
+<div class="col-span-2 flex justify-end">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm">排队中</span>
+</div>
+</div>
+<!-- Dummy Row 3 -->
+<div class="grid grid-cols-12 px-space-md py-space-sm items-center hover:bg-surface-container-low transition-colors">
+<div class="col-span-1 font-label-sm text-label-sm text-outline">#T-0943</div>
+<div class="col-span-4 font-body-md text-body-md text-on-surface">设计离线端数据加密密钥存储规范</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface-variant">架构安全规范</div>
+<div class="col-span-2 font-body-md text-body-md text-on-surface-variant">2026-09-10</div>
+<div class="col-span-1 font-body-md text-body-md text-on-surface-variant">90m</div>
+<div class="col-span-2 flex justify-end">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm">待评审</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Wash Overlay -->
+<div class="fixed inset-0 bg-on-surface/40 backdrop-blur-[4px] z-40 transition-opacity duration-200" id="drawerBackdrop"></div>
+<!-- High-Fidelity Task Detail Drawer Panel -->
+<aside class="fixed top-0 right-0 h-full w-[620px] max-w-full bg-surface-container-lowest z-50 flex flex-col shadow-2xl transition-transform duration-300" id="taskDetailDrawer">
+<!-- Drawer Header -->
+<div class="flex flex-col gap-space-sm px-space-lg pt-space-lg pb-space-md bg-surface-container-lowest shadow-[0_1px_0_0_rgba(11,28,48,0.08)]">
+<!-- Breadcrumb Context & Status Badge -->
+
+<!-- Editable Title & Primary Action Controls -->
+<div class="flex items-start justify-between gap-space-md mt-1">
+<div class="flex-1 min-w-0">
+<input aria-label="任务标题" class="w-full bg-transparent font-headline-md text-headline-md text-on-surface font-bold tracking-tight outline-none focus:bg-surface-container-low px-1 py-0.5 rounded-DEFAULT transition-all" type="text" value="配置 Vite 生产环境包体积压缩插件">
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="h-9 px-space-md bg-primary text-on-primary hover:bg-neutral-800 rounded-lg flex items-center gap-space-xs font-label-lg text-label-lg transition-colors shadow-sm" id="markCompleteBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span class="">标记完成</span>
+</button>
+<button aria-label="更多操作" class="w-9 h-9 flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<button aria-label="关闭抽屉" class="w-9 h-9 flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg transition-colors" id="closeDrawerBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Drawer Scrollable Body Content -->
+<div class="flex-1 overflow-y-auto px-space-lg py-space-md flex flex-col gap-space-lg">
+<!-- Section 1: Meta Properties Grid (Logistics Precision KV) -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm shadow-sm">
+
+<div class="grid grid-cols-2 gap-x-space-lg gap-y-space-sm pt-space-xs">
+<!-- Item 1: 计划日期 -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-2 rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+              计划日期
+            </span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">2026-09-07 (今天)</span>
+</div>
+<!-- Item 2: 截止时间 -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-2 rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">alarm</span>
+              截止时间
+            </span>
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">今日 18:00</span>
+<span class="px-1 py-0.2 bg-error-container text-error font-label-sm text-label-sm rounded-DEFAULT">剩余 2h</span>
+</div>
+</div>
+<!-- Item 3: 所属项目 -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-2 rounded-DEFAULT hover:bg-surface-container-highest/40 cursor-pointer transition-colors group">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">folder</span>
+              所属项目
+            </span>
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-on-tertiary-fixed-variant">开发 SoloFocus</span>
+<span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span>
+</div>
+</div>
+<!-- Item 4: 所属领域 -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-2 rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">layers</span>
+              所属领域
+            </span>
+<span class="inline-flex items-center px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-DEFAULT">
+              工作与交付 · 随项目联动
+            </span>
+</div>
+<!-- Item 5: 预估工时 -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-2 rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">timelapse</span>
+              预估工时
+            </span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">45 分钟</span>
+</div>
+<!-- Item 6: 优先级 -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-2 rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">priority_high</span>
+              优先级
+            </span>
+<span class="inline-flex items-center px-space-xs py-0.5 bg-error text-on-error font-label-sm text-label-sm font-bold rounded-DEFAULT">
+              最高 (CRITICAL)
+            </span>
+</div>
+</div>
+</div>
+<!-- Section 2: SOP Reuse & Step Checklist (PRD Core Workflow) -->
+<div class="flex flex-col gap-space-sm">
+<!-- SOP Header & Action -->
+<div class="flex items-center justify-between bg-surface-container-high px-space-md py-2.5 rounded-lg">
+<div class="flex items-center gap-space-xs min-w-0">
+
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">已挂载 SOP</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate font-semibold">Web 前端性能排查与构建发布</span>
+</div>
+</div>
+<button class="px-space-sm py-1 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-DEFAULT transition-colors shadow-sm shrink-0" type="button">
+            更换/重置 SOP
+          </button>
+</div>
+<!-- Step List -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center justify-between px-space-xs pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">执行清单 (2/4 已就绪)</span>
+
+</div>
+<!-- Step 1 (Completed) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container transition-colors group">
+<div class="pt-0.5">
+<div class="w-4 h-4 rounded-DEFAULT bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="font-body-md text-body-md text-outline line-through">
+                1. 分析当前 rollup bundle 分析图表（确认 vendor.js 超标模块）
+              </span>
+
+</div>
+
+</div>
+<!-- Step 2 (Completed) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container transition-colors group">
+<div class="pt-0.5">
+<div class="w-4 h-4 rounded-DEFAULT bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="font-body-md text-body-md text-outline line-through">
+                2. 引入 terser 压缩配置并开启 gzip/brotli 预压缩插件
+              </span>
+
+</div>
+
+</div>
+<!-- Step 3 (In-Progress Highlighted) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-highest shadow-sm">
+<div class="pt-0.5">
+<div class="w-4 h-4 rounded-DEFAULT bg-surface-container-lowest flex items-center justify-center shadow-inner">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</div>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">
+                3. 验证单机构建体积与资源加载时延
+              </span>
+<div class="flex items-center gap-space-xs mt-1">
+
+
+</div>
+</div>
+
+</div>
+<!-- Step 4 (Pending) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container transition-colors group">
+<div class="pt-0.5">
+<div class="w-4 h-4 rounded-DEFAULT bg-surface-container-low shadow-sm"></div>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">
+                4. 提交本地 Git 记录并验证 SQLite 日志写入
+              </span>
+
+</div>
+
+</div>
+</div>
+</div>
+<!-- Section 3: Task Notes & Execution Context (Markdown/Raw Log Styling) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">任务备忘</span>
+
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs pb-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">description</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">约束与安全界限</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT text-on-surface font-body-md text-body-md leading-relaxed">
+            生产构建目标需控制单机包体积在 <span class="font-bold text-on-surface underline">2.5MB WAL 模式</span> 限制之内，避免本地 SQLite 读写造成主线程卡顿。第三方分析图表组件采用动态懒加载导入，确保首屏 Cold Start 低于 320ms。
+          </div>
+</div>
+</div>
+</div>
+<!-- Fixed Drawer Footer (Actions & Terminal Controls) -->
+<div class="px-space-lg py-space-sm bg-surface-container-lowest shadow-[0_-1px_0_0_rgba(11,28,48,0.08)] flex items-center justify-between shrink-0">
+<!-- Destructive / Revert Actions -->
+<div class="flex items-center gap-space-md">
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span class="">恢复待办</span>
+</button>
+<button class="font-label-md text-label-md text-error hover:opacity-80 transition-opacity flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span class="">移入回收站</span>
+</button>
+</div>
+<!-- Commit Controls -->
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-lg text-label-lg transition-colors" id="cancelDrawerBtn" type="button">
+          关闭抽屉
+        </button>
+<button class="h-9 px-space-lg bg-primary hover:bg-neutral-800 text-on-primary rounded-lg font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm" id="saveChangesBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span class="">保存更改</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Interaction Logic for Slide-Over Drawer Simulation -->
+<script>
+    (function () {
+      const drawer = document.getElementById('taskDetailDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const closeBtn = document.getElementById('closeDrawerBtn');
+      const cancelBtn = document.getElementById('cancelDrawerBtn');
+      const saveBtn = document.getElementById('saveChangesBtn');
+      const completeBtn = document.getElementById('markCompleteBtn');
+
+      function hideDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.style.transform = 'translateX(100%)';
+        backdrop.style.opacity = '0';
+        backdrop.style.pointerEvents = 'none';
+        setTimeout(() => {
+          drawer.style.display = 'none';
+          backdrop.style.display = 'none';
+        }, 250);
+      }
+
+      function showDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.style.display = 'flex';
+        backdrop.style.display = 'block';
+        setTimeout(() => {
+          drawer.style.transform = 'translateX(0)';
+          backdrop.style.opacity = '1';
+          backdrop.style.pointerEvents = 'auto';
+        }, 10);
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', hideDrawer);
+      if (cancelBtn) cancelBtn.addEventListener('click', hideDrawer);
+      if (backdrop) backdrop.addEventListener('click', hideDrawer);
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          const prevHtml = saveBtn.innerHTML;
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">progress_activity</span><span>已写入本地</span>';
+          setTimeout(() => {
+            saveBtn.innerHTML = prevHtml;
+            hideDrawer();
+          }, 400);
+        });
+      }
+
+      if (completeBtn) {
+        completeBtn.addEventListener('click', () => {
+          completeBtn.classList.toggle('bg-secondary');
+          completeBtn.classList.toggle('bg-primary');
+          const isDone = completeBtn.classList.contains('bg-secondary');
+          completeBtn.innerHTML = isDone 
+            ? '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>任务已达成</span>'
+            : '<span class="material-symbols-outlined text-[18px]">done_all</span><span>标记完成</span>';
+        });
+      }
+    })();
+  </script>
+</div></main></div>
+
+</body></html>

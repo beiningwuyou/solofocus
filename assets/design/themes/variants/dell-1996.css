@@ -1,0 +1,52 @@
+/* ============================================================
+ * L2 可选主题变体 — Dell 1996（90 年代产品目录签名）
+ *
+ * 作用域: 仅 [data-theme="dell-1996"]。组件 markup 零改动，纯装饰叠加。
+ * 触发: 主题 L1 已把圆角置 0、边框置纯黑、字体换 Times/Arial Black（见 dell-1996.json）。
+ *       本文件再补一层“90 年代浮雕 bevel”签名，让硬边框有立体贴纸感。
+ *
+ * harness 铁律约束: 禁渐变 / 毛玻璃 / 发光。此处只用实色边框 + inset 浮雕阴影
+ * （box-shadow inset 是允许的，不属于外发光），不引入任何 banned 效果。
+ *
+ * 启用方式（可选，默认不加载以保持极简）:
+ *   在 src/client/styles.css 末尾加：
+ *     @import './themes-variants.generated.css';
+ *   或单独引入本文件：
+ *     @import '../../assets/design/themes/variants/dell-1996.css';
+ * ============================================================ */
+
+[data-theme="dell-1996"] .sidebar,
+[data-theme="dell-1996"] .section-panel,
+[data-theme="dell-1996"] .wide-panel,
+[data-theme="dell-1996"] .data-table,
+[data-theme="dell-1996"] .card-row,
+[data-theme="dell-1996"] .review-stat,
+[data-theme="dell-1996"] .metric-item,
+[data-theme="dell-1996"] .vision-card,
+[data-theme="dell-1996"] .project-gallery-card {
+  border: 2px solid #000;
+  box-shadow: inset -2px -2px 0 rgba(0, 0, 0, .25), inset 2px 2px 0 rgba(255, 255, 255, .7);
+}
+
+[data-theme="dell-1996"] .button {
+  border: 2px solid #000;
+  box-shadow: inset -2px -2px 0 rgba(0, 0, 0, .3), inset 2px 2px 0 rgba(255, 255, 255, .6);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: 700;
+}
+
+[data-theme="dell-1996"] .button:active {
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, .3), inset -2px -2px 0 rgba(255, 255, 255, .5);
+}
+
+[data-theme="dell-1996"] .nav-item.active {
+  border: 2px solid #000;
+  font-weight: 700;
+}
+
+[data-theme="dell-1996"] .task-row:hover,
+[data-theme="dell-1996"] .area-row:hover,
+[data-theme="dell-1996"] .nav-item:hover {
+  box-shadow: inset -2px -2px 0 rgba(0, 0, 0, .2), inset 2px 2px 0 rgba(255, 255, 255, .6);
+}

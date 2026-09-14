@@ -1,0 +1,529 @@
+<!DOCTYPE html><html lang="zh-CN" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline": "#7e7576",
+          "surface-container-highest": "#d3e3ff",
+          "on-tertiary-fixed-variant": "#00458f",
+          "surface-container-low": "#eff4ff",
+          "primary": "#000000",
+          "tertiary-container": "#001b3f",
+          "secondary": "#016d35",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#001b3f",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "secondary-container": "#9bf7af",
+          "primary-fixed": "#e2e2e2",
+          "on-secondary-fixed": "#00210c",
+          "surface-tint": "#5e5e5e",
+          "surface-container-lowest": "#ffffff",
+          "inverse-primary": "#c6c6c6",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-bright": "#f8f9ff",
+          "surface-dim": "#cbdbf6",
+          "on-surface-variant": "#4c4546",
+          "on-secondary-container": "#0f743b",
+          "on-background": "#0b1c30",
+          "on-surface": "#0b1c30",
+          "surface-variant": "#d3e3ff",
+          "primary-container": "#1b1b1b",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary": "#ffffff",
+          "surface": "#f8f9ff",
+          "primary-fixed-dim": "#c6c6c6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#005226",
+          "surface-container": "#e6eeff",
+          "surface-container-high": "#dde9ff",
+          "tertiary-fixed-dim": "#abc7ff",
+          "background": "#f8f9ff",
+          "secondary-fixed-dim": "#7fda95",
+          "on-tertiary-container": "#4d83db",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#213146",
+          "tertiary": "#000000",
+          "on-primary-container": "#848484",
+          "tertiary-fixed": "#d7e3ff",
+          "outline-variant": "#cfc4c5",
+          "on-error": "#ffffff",
+          "inverse-on-surface": "#ebf1ff",
+          "secondary-fixed": "#9bf7af"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "0.75rem",
+          "gutter-mobile": "0.5rem",
+          "margin": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1rem",
+          "margin-desktop": "2rem",
+          "margin-tablet": "1.5rem",
+          "gutter-desktop": "1.25rem",
+          "space-xl": "1.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Manrope"],
+          "body-lg": ["Inter"],
+          "title-sm": ["Manrope"],
+          "label-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "body-sm": ["Inter"],
+          "headline-sm": ["Manrope"],
+          "label-sm": ["Inter"],
+          "headline-lg-mobile": ["Manrope"],
+          "label-md": ["Inter"],
+          "title-md": ["Manrope"],
+          "headline-md": ["Manrope"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "title-sm": ["13px", {"lineHeight": "18px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-sm": ["11px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "label-md": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "title-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">target</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">SoloFocus</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Personal Workspace</span></div></div><div class="px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="today-desk" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="">今日工作台</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg transition-colors bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]" data-path="all-tasks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="">全部任务</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="all-projects" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="">全部项目</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="domains-and-goals" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span class="">领域与目标</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="habit-tracker" href="#"><span class="material-symbols-outlined text-[20px]">repeat</span><span class="">习惯打卡</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sop-knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="">SOP 知识库</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">database</span><span class="font-label-md text-label-md text-on-surface">SQLite 本地存储</span></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>ACTIVE</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">设置 (备份与归档)</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline rounded-lg outline-none transition-all focus:bg-surface-container-lowest" placeholder="全局快速检索 (按 ⌘K 定位)..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_today</span><span class="">2026年9月7日 星期一 · 第34周</span></div><button aria-label="通知" class="relative p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button></div></header><main class="w-full pt-14 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg pb-space-xl">
+<!-- 顶部导航面包屑与主动作条 -->
+<section class="flex items-center justify-between bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-space-xs rounded-lg hover:bg-surface-container" data-path="domains-and-goals" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">返回领域与目标</span>
+</a>
+<span class="text-outline-variant font-label-md">/</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">新建领域</span>
+
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 h-9 bg-surface-container-low text-on-surface font-label-lg text-label-lg rounded-lg hover:bg-surface-container transition-colors" id="btn-reset" type="button">
+          重置</button>
+<button class="px-space-md py-1.5 h-9 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-neutral-800 transition-colors flex items-center gap-1" id="btn-submit" type="button">
+<span class="">保存并创建领域</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- 标题与指导纲领区 -->
+<header class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-lg rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+
+
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">规划新的长期关注领域</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        确立个人技术深耕、事业拓展、身心健康或创作方向的顶层范畴与长期准则。领域作为生命周期中最稳定的顶层支柱，下辖多个演进目标与交付项目。
+      </p>
+</header>
+<!-- 主体双栏配置架构 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- 左栏：基础定义与守则 (约 40% 宽度) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- 卡片一：基本信息 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-3.5 bg-primary rounded-DEFAULT"></span>
+<h2 class="font-title-md text-title-md text-on-surface">领域基本信息</h2>
+</div>
+
+</div>
+<!-- 领域名称输入 -->
+<div class="flex flex-col gap-space-xs">
+
+<div class="relative">
+<input class="w-full h-10 px-space-sm bg-surface-container-low font-body-md text-body-md text-on-surface rounded-lg outline-none transition-all placeholder:text-outline focus:bg-surface-container-lowest" id="domain-name" maxlength="40" placeholder="例如：开源架构与系统工程 / 资产管理与稳健回报" type="text">
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+
+
+</div>
+</div>
+<!-- 图标矩阵选择 -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface">领域标识（单选）</label>
+<div class="grid grid-cols-6 gap-space-xs" id="icon-selector">
+<button class="icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-highest text-on-surface shadow-sm transition-all" data-icon="terminal" title="系统开发" type="button">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</button>
+<button class="icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-icon="bolt" title="高能行动" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<button class="icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-icon="menu_book" title="深阅读" type="button">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</button>
+<button class="icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-icon="ecg_heart" title="健康监测" type="button">
+<span class="material-symbols-outlined text-[20px]">ecg_heart</span>
+</button>
+<button class="icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-icon="account_balance" title="财务资产" type="button">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</button>
+<button class="icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-icon="palette" title="创作输出" type="button">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</button>
+</div>
+</div>
+<!-- 颜色标识 -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface">颜色标识</label>
+<div class="flex items-center gap-space-sm" id="color-selector">
+<button class="color-opt w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary ring-2 ring-offset-2 ring-primary" data-color="black" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="color-opt w-7 h-7 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary" data-color="blue" type="button">
+<span class="material-symbols-outlined text-[14px] hidden">check</span>
+</button>
+<button class="color-opt w-7 h-7 rounded-lg bg-secondary flex items-center justify-center text-on-secondary" data-color="green" type="button">
+<span class="material-symbols-outlined text-[14px] hidden">check</span>
+</button>
+<button class="color-opt w-7 h-7 rounded-lg bg-[#b45309] flex items-center justify-center text-white" data-color="orange" type="button">
+<span class="material-symbols-outlined text-[14px] hidden">check</span>
+</button>
+<button class="color-opt w-7 h-7 rounded-lg bg-[#581c87] flex items-center justify-center text-white" data-color="purple" type="button">
+<span class="material-symbols-outlined text-[14px] hidden">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 卡片二：长期定位与准则 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-3.5 bg-primary rounded-DEFAULT"></span>
+<h2 class="font-title-md text-title-md text-on-surface">定位与准则</h2>
+</div>
+
+</div>
+<!-- 快速参考模板芯片 -->
+<div class="flex flex-col gap-space-xs">
+
+<div class="flex flex-wrap gap-1.5">
+<button class="preset-chip text-left px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg transition-colors" type="button">
+                高响应极简交付
+              </button>
+<button class="preset-chip text-left px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg transition-colors" type="button">
+                身心平衡不可破底线
+              </button>
+<button class="preset-chip text-left px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg transition-colors" type="button">
+                长期价值复利优先
+              </button>
+</div>
+</div>
+<!-- 准则文本域 -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="domain-guideline">领域长期宣言与原则定义</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="desc-counter">0/5000</span>
+</div>
+<textarea class="w-full p-space-sm bg-surface-container-low font-body-md text-body-md text-on-surface rounded-lg outline-none transition-all placeholder:text-outline focus:bg-surface-container-lowest leading-relaxed resize-none" id="domain-guideline" maxlength="5000" placeholder="明确在该范畴内的决策优先级与底线规则。例如：凡涉及系统工程的项目必须遵循自动化测试与本地优先准则；每周保证不少于 8 小时深度聚焦时间。" rows="6"></textarea>
+
+</div>
+</div>
+</div>
+<!-- 右栏：战略目标与关联规划 (约 60% 宽度) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- 卡片三：首期战略目标 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-3.5 bg-primary rounded-DEFAULT"></span>
+<h2 class="font-title-md text-title-md text-on-surface">规划目标</h2>
+</div>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface bg-surface-container hover:bg-surface-container-high px-space-sm py-1 rounded-lg transition-colors" id="add-goal-card" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">增加目标卡片</span>
+</button>
+</div>
+
+<!-- 目标卡片列表容器 -->
+<div class="flex flex-col gap-space-md" id="goals-container">
+<!-- 目标卡片 1 -->
+<div class="goal-item bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-DEFAULT bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">01</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">首要里程碑目标</span>
+</div>
+<button class="remove-goal text-on-surface-variant hover:text-error transition-colors p-1" title="移除此项" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline" placeholder="例如：建立全套个人全栈离线交付标准体系" type="text">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">关键结果与衡量基准</label>
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline" placeholder="例如：验证 30 天无外部服务强依赖闭环运行" type="text">
+</div>
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">预期完成时间</label>
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none" type="date" value="2026-12-31">
+</div>
+</div>
+</div>
+<!-- 目标卡片 2 -->
+<div class="goal-item bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-DEFAULT bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-label-sm">02</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">进阶目标</span>
+</div>
+<button class="remove-goal text-on-surface-variant hover:text-error transition-colors p-1" title="移除此项" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline" placeholder="例如：形成可复用的技术专栏或成体系交付件" type="text">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">关键结果与衡量基准</label>
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline" placeholder="例如：产出 12 篇具备工业级代码的深度实践记录" type="text">
+</div>
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">预期完成时间</label>
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none" type="date" value="2027-03-31">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 卡片四：关联初始项目 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-3.5 bg-primary rounded-DEFAULT"></span>
+<h2 class="font-title-md text-title-md text-on-surface">关联项目或备选事项</h2>
+</div>
+
+</div>
+
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<div class="md:col-span-7 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">项目名称</label>
+<input class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline" placeholder="例如：搭建自托管数据看板工程" type="text">
+</div>
+<div class="md:col-span-5 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">当前预估状态</label>
+<div class="flex items-center h-9 px-space-sm bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary mr-2"></span>
+<span class="">就绪并加入待办队列</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<div class="w-4 h-4 rounded-DEFAULT bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">创建完成后自动在全局项目视窗生成对应卡片容器</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部辅助说明与数据安全状态条 -->
+
+</div>
+</div>
+<script>
+  (function() {
+    // 字符计数器
+    const nameInput = document.getElementById('domain-name');
+    const nameCounter = document.getElementById('name-counter');
+    if (nameInput && nameCounter) {
+      nameInput.addEventListener('input', () => {
+        nameCounter.textContent = `${nameInput.value.length}/40`;
+      });
+    }
+
+    const descInput = document.getElementById('domain-guideline');
+    const descCounter = document.getElementById('desc-counter');
+    if (descInput && descCounter) {
+      descInput.addEventListener('input', () => {
+        descCounter.textContent = `${descInput.value.length}/5000`;
+      });
+    }
+
+    // 预设模板填充
+    const presetChips = document.querySelectorAll('.preset-chip');
+    presetChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        if (descInput) {
+          const text = chip.textContent.trim();
+          if (text === '高响应极简交付') {
+            descInput.value = "【准则：高响应极简交付】\n1. 核心需求完成即发布，拒绝过度冗余设计；\n2. 本地化操作响应时间不高于 50ms；\n3. 每一个技术决策以清晰、低维护成本为第一原则。";
+          } else if (text === '身心平衡不可破底线') {
+            descInput.value = "【准则：身心平衡不可破底线】\n1. 每周至少保证 3 次中高强度运动；\n2. 每日 23:00 后不再进行高脑力强度的屏幕作业；\n3. 坚守健康第一位，任何交付不得以透支精力为代价。";
+          } else if (text === '长期价值复利优先') {
+            descInput.value = "【准则：长期价值复利优先】\n1. 拒绝短周期消耗型无效事项；\n2. 优先投入具备知识沉淀与自动化复用能力的工具链构建；\n3. 坚持按季度复盘资产与技术栈积累。";
+          }
+          if (descCounter) {
+            descCounter.textContent = `${descInput.value.length}/5000`;
+          }
+        }
+      });
+    });
+
+    // 图标单选
+    const iconButtons = document.querySelectorAll('.icon-opt');
+    iconButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        iconButtons.forEach(b => {
+          b.className = "icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all";
+        });
+        btn.className = "icon-opt flex items-center justify-center h-10 rounded-lg bg-surface-container-highest text-on-surface shadow-sm transition-all";
+      });
+    });
+
+    // 颜色单选
+    const colorButtons = document.querySelectorAll('.color-opt');
+    colorButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        colorButtons.forEach(b => {
+          b.classList.remove('ring-2', 'ring-offset-2', 'ring-primary');
+          const chk = b.querySelector('.material-symbols-outlined');
+          if (chk) chk.classList.add('hidden');
+        });
+        btn.classList.add('ring-2', 'ring-offset-2', 'ring-primary');
+        const activeChk = btn.querySelector('.material-symbols-outlined');
+        if (activeChk) activeChk.classList.remove('hidden');
+      });
+    });
+
+    // 动态移除目标卡片
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.remove-goal')) {
+        const goalCard = e.target.closest('.goal-item');
+        const container = document.getElementById('goals-container');
+        if (container && container.children.length > 1) {
+          goalCard.remove();
+          updateGoalNumbers();
+        } else {
+          alert('至少保留一个规划目标输入项，如暂无规划可留空。');
+        }
+      }
+    });
+
+    // 添加新目标卡片
+    const addGoalBtn = document.getElementById('add-goal-card');
+    if (addGoalBtn) {
+      addGoalBtn.addEventListener('click', () => {
+        const container = document.getElementById('goals-container');
+        const count = container.children.length + 1;
+        const newGoal = document.createElement('div');
+        newGoal.className = "goal-item bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm relative";
+        newGoal.innerHTML = `
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-space-xs">
+              <span class="w-5 h-5 rounded-DEFAULT bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-label-sm goal-num">0${count}</span>
+              <span class="font-title-sm text-title-sm text-on-surface font-semibold">规划目标 #${count}</span>
+            </div>
+            <button type="button" class="remove-goal text-on-surface-variant hover:text-error transition-colors p-1" title="移除此项">
+              <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <label class="font-label-md text-label-md text-on-surface">目标标题</label>
+            <input 
+              type="text" 
+              placeholder="输入目标名称" 
+              class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline"
+            />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+            <div class="md:col-span-8 flex flex-col gap-space-xs">
+              <label class="font-label-md text-label-md text-on-surface">关键结果与衡量基准</label>
+              <input 
+                type="text" 
+                placeholder="指标或交付物描述" 
+                class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none placeholder:text-outline"
+              />
+            </div>
+            <div class="md:col-span-4 flex flex-col gap-space-xs">
+              <label class="font-label-md text-label-md text-on-surface">预期完成时间</label>
+              <input 
+                type="date" 
+                class="w-full h-9 px-space-sm bg-surface-container-lowest font-body-md text-body-md text-on-surface rounded-lg outline-none"
+              />
+            </div>
+          </div>
+        `;
+        container.appendChild(newGoal);
+      });
+    }
+
+    function updateGoalNumbers() {
+      const container = document.getElementById('goals-container');
+      Array.from(container.children).forEach((item, index) => {
+        const numBadge = item.querySelector('.goal-num');
+        if (numBadge) {
+          numBadge.textContent = `0${index + 1}`;
+        }
+      });
+    }
+
+    // 重置表单
+    const resetBtn = document.getElementById('btn-reset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        if (confirm('确认清空当前草稿并重置所有输入内容？')) {
+          if (nameInput) nameInput.value = '';
+          if (descInput) descInput.value = '';
+          if (nameCounter) nameCounter.textContent = '0/40';
+          if (descCounter) descCounter.textContent = '0/5000';
+        }
+      });
+    }
+
+    // 保存并提交
+    const submitBtn = document.getElementById('btn-submit');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        const val = nameInput ? nameInput.value.trim() : '';
+        if (!val) {
+          alert('请先输入领域名称');
+          if (nameInput) nameInput.focus();
+          return;
+        }
+        submitBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[16px] animate-spin">refresh</span>
+          <span>正在写入 SQLite...</span>
+        `;
+        submitBtn.disabled = true;
+        setTimeout(() => {
+          alert('新领域及关联战略目标已持久化至本地数据库！');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `
+            <span>保存并创建领域</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          `;
+        }, 350);
+      });
+    }
+  })();
+</script></main></div>
+
+</body></html>

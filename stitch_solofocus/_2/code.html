@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="zh-CN" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline": "#7e7576",
+          "surface-container-highest": "#d3e3ff",
+          "on-tertiary-fixed-variant": "#00458f",
+          "surface-container-low": "#eff4ff",
+          "primary": "#000000",
+          "tertiary-container": "#001b3f",
+          "secondary": "#016d35",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#001b3f",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "secondary-container": "#9bf7af",
+          "primary-fixed": "#e2e2e2",
+          "on-secondary-fixed": "#00210c",
+          "surface-tint": "#5e5e5e",
+          "surface-container-lowest": "#ffffff",
+          "inverse-primary": "#c6c6c6",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-bright": "#f8f9ff",
+          "surface-dim": "#cbdbf6",
+          "on-surface-variant": "#4c4546",
+          "on-secondary-container": "#0f743b",
+          "on-background": "#0b1c30",
+          "on-surface": "#0b1c30",
+          "surface-variant": "#d3e3ff",
+          "primary-container": "#1b1b1b",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary": "#ffffff",
+          "surface": "#f8f9ff",
+          "primary-fixed-dim": "#c6c6c6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#005226",
+          "surface-container": "#e6eeff",
+          "surface-container-high": "#dde9ff",
+          "tertiary-fixed-dim": "#abc7ff",
+          "background": "#f8f9ff",
+          "secondary-fixed-dim": "#7fda95",
+          "on-tertiary-container": "#4d83db",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#213146",
+          "tertiary": "#000000",
+          "on-primary-container": "#848484",
+          "tertiary-fixed": "#d7e3ff",
+          "outline-variant": "#cfc4c5",
+          "on-error": "#ffffff",
+          "inverse-on-surface": "#ebf1ff",
+          "secondary-fixed": "#9bf7af"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "0.75rem",
+          "gutter-mobile": "0.5rem",
+          "margin": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1rem",
+          "margin-desktop": "2rem",
+          "margin-tablet": "1.5rem",
+          "gutter-desktop": "1.25rem",
+          "space-xl": "1.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Manrope"],
+          "body-lg": ["Inter"],
+          "title-sm": ["Manrope"],
+          "label-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "body-sm": ["Inter"],
+          "headline-sm": ["Manrope"],
+          "label-sm": ["Inter"],
+          "headline-lg-mobile": ["Manrope"],
+          "label-md": ["Inter"],
+          "title-md": ["Manrope"],
+          "headline-md": ["Manrope"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "title-sm": ["13px", {"lineHeight": "18px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-sm": ["11px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "label-md": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "title-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">target</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">SoloFocus</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Personal Workspace</span></div></div><div class="px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="today-desk" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="">今日工作台</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="all-tasks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="">全部任务</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg transition-colors bg-surface-container-highest text-on-surface font-title-sm shadow-[0_1px_2px_rgba(11,28,48,0.04)]" data-path="all-projects" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="">全部项目</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="domains-and-goals" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span class="">领域与目标</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="habit-tracker" href="#"><span class="material-symbols-outlined text-[20px]">repeat</span><span class="">习惯打卡</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sop-knowledge-base" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="">SOP 知识库</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">database</span><span class="font-label-md text-label-md text-on-surface">SQLite 本地存储</span></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>ACTIVE</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">设置 (备份与归档)</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline rounded-lg outline-none transition-all focus:bg-surface-container-lowest" placeholder="全局快速检索 (按 ⌘K 定位)..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_today</span><span class="">2026年9月7日 星期一 · 第34周</span></div><button aria-label="通知" class="relative p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button></div></header><main class="w-full pt-14 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full relative">
+<!-- 底层全景背景模拟 (全部项目概览底层视图，增强弹出层景深与上下文联想) -->
+<div class="w-full flex flex-col gap-space-lg select-none opacity-40 pointer-events-none filter blur-[2px] transition-all">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">全部项目</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">管理核心战略领域与季度交付阶段 · 共 14 个活跃工程</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="h-9 px-space-md bg-surface-container-low rounded-lg flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+<span class="font-label-md text-label-md">全部领域 (4)</span>
+</div>
+<div class="h-9 px-space-md bg-primary text-on-primary rounded-lg flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span class="">新建项目</span>
+</div>
+</div>
+</div>
+<!-- 模拟底层项目列表卡片阵列 -->
+<div class="grid grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container text-on-surface font-label-sm text-label-sm">工作与交付</span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 进行中
+          </span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-headline-sm">全链路本地数据巡检脚本流水线</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-2/3"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+<span class="">交付期: 2026-09-30</span>
+<span class="">4 / 6 里程碑</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container text-on-surface font-label-sm text-label-sm">核心基建</span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 进行中
+          </span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-headline-sm">SQLite 多线程高频事务快照引擎</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/4"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+<span class="">交付期: 2026-10-15</span>
+<span class="">1 / 4 里程碑</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container text-on-surface font-label-sm text-label-sm">学习与认知</span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> 规划中
+          </span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-headline-sm">嵌入式 Rust 系统调度精要研读</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-0"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+<span class="">交付期: 2026-11-20</span>
+<span class="">0 / 5 里程碑</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 模态遮罩层 (居中浮层 Modal Backdrop) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-gutter bg-on-background/45 backdrop-blur-[3px] transition-opacity" id="project-modal-backdrop">
+<!-- 模态主窗口 (Modal Dialog: 宽度约 720px，极简利落，硬朗微圆角，纯白卡片，信息强聚焦) -->
+<div class="w-full max-w-[720px] bg-surface-container-lowest rounded-xl shadow-[0_16px_40px_rgba(11,28,48,0.18)] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150" id="project-modal-card">
+<!-- 窗口顶部标题栏 (Window Title Bar & Operations) -->
+<div class="h-13 px-space-xl py-space-md bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">新建项目</span>
+
+</div>
+<!-- 窗口右上角辅助与关闭按钮 (参考设计模式) -->
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button aria-label="全屏" class="w-7 h-7 rounded-DEFAULT flex items-center justify-center hover:bg-surface-container-low hover:text-on-surface transition-colors" title="展开为全屏面板" type="button">
+<span class="material-symbols-outlined text-[17px]">open_in_full</span>
+</button>
+<button aria-label="复制链接" class="w-7 h-7 rounded-DEFAULT flex items-center justify-center hover:bg-surface-container-low hover:text-on-surface transition-colors" title="复制引用链接" type="button">
+<span class="material-symbols-outlined text-[17px]">link</span>
+</button>
+<button aria-label="收藏" class="w-7 h-7 rounded-DEFAULT flex items-center justify-center hover:bg-surface-container-low hover:text-on-surface transition-colors" title="设为加急优先" type="button">
+
+</button>
+<div class="w-px h-3.5 bg-surface-container-highest mx-0.5"></div>
+<button aria-label="关闭" class="w-7 h-7 rounded-DEFAULT flex items-center justify-center hover:bg-error-container hover:text-on-error-container transition-colors" id="modal-close-btn" title="关闭 (Esc)" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- 细微视觉分割 -->
+<div class="w-full h-px bg-surface-container"></div>
+<!-- 模态主体表单区 (Form Body) -->
+<form class="flex flex-col p-space-xl gap-space-lg max-h-[calc(88vh-120px)] overflow-y-auto" id="create-project-form">
+<!-- 核心属性 01: 项目名称 (必填，高视觉张力标题输入框，无繁琐边框) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1" for="project-title-input">
+
+
+</label>
+
+</div>
+<input autofocus="" class="w-full font-headline-md text-headline-md text-on-surface placeholder:text-outline bg-transparent py-space-xs focus:outline-none focus:ring-0 leading-tight" id="project-title-input" placeholder="输入项目名称..." required="" type="text">
+<div class="w-full h-0.5 bg-surface-container-high focus-within:bg-primary transition-colors"></div>
+</div>
+<!-- 核心属性 02: 属性双列栅格 (领域归属 + 计划交付周期) -->
+<div class="grid grid-cols-2 gap-space-lg pt-space-xs">
+<!-- 领域归属 (Domain Select) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5" for="domain-select">
+
+<span class="">关联领域</span>
+</label>
+<div class="relative w-full">
+<select class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg appearance-none cursor-pointer outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_1.5px_rgba(0,0,0,0.85)] transition-all pr-8" id="domain-select">
+<option selected="" value="delivery">工作与交付 (Core Work)</option>
+<option value="infrastructure">底层基建与研发 (Infrastructure)</option>
+<option value="growth">个人认知与研读 (Growth)</option>
+<option value="life">生活与体魄管理 (Wellness)</option>
+<option value="unassigned">暂不归属 / 敏捷孵化中</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- 计划周期 / 达成日期 (Target Delivery Date) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5" for="target-date-input">
+<span class="material-symbols-outlined text-[15px] text-outline">calendar_today</span>
+<span class="">预期完成日期</span>
+</label>
+<div class="relative w-full flex items-center">
+<input class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_1.5px_rgba(0,0,0,0.85)] transition-all cursor-pointer" id="target-date-input" type="date" value="2026-09-30">
+</div>
+</div>
+</div>
+<!-- 核心属性 03: 初始愿景与说明 (富文本/多行描述) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5" for="project-desc-input">
+<span class="material-symbols-outlined text-[15px] text-outline">notes</span>
+<span class="">项目简介</span>
+</label>
+<div class="relative w-full rounded-lg bg-surface-container-low p-space-sm focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_1.5px_rgba(0,0,0,0.85)] transition-all">
+<textarea class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline outline-none resize-none leading-relaxed" id="project-desc-input" placeholder="该项目的预期交付目标、核心产出或质量检验基准..." rows="3"></textarea>
+<div class="flex items-center justify-between pt-space-xs font-body-sm text-body-sm text-outline">
+
+<span id="char-count" class="">25 / 300</span>
+</div>
+</div>
+</div>
+<!-- 核心属性 04: 初始阶段规划 / 里程碑挂载 (快速回车添加) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-outline">checklist</span>
+<span class="">节点与关键成果</span>
+</label>
+<span class="font-body-sm text-body-sm text-outline">选填</span>
+</div>
+<!-- 预设与动态里程碑条目容器 -->
+<div class="flex flex-col gap-space-xs" id="milestones-list">
+<!-- 条目 1 -->
+<div class="group flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0 flex-1">
+<span class="w-4 h-4 rounded-DEFAULT bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">1</span>
+<span class="font-body-md text-body-md text-on-surface truncate">阶段 01: 核心功能日常验证与脚本基准落地</span>
+</div>
+<button aria-label="移除里程碑" class="text-outline hover:text-error transition-colors p-0.5 opacity-60 hover:opacity-100" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- 条目 2 -->
+<div class="group flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0 flex-1">
+<span class="w-4 h-4 rounded-DEFAULT bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">2</span>
+<span class="font-body-md text-body-md text-on-surface truncate">阶段 02: 本地 SQLite 故障断点自动重试机制</span>
+</div>
+<button aria-label="移除里程碑" class="text-outline hover:text-error transition-colors p-0.5 opacity-60 hover:opacity-100" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- 快速输入条 -->
+<div class="flex items-center gap-space-xs mt-1">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-sm top-2 text-outline text-[16px]">add_circle</span>
+<input class="w-full h-8 pl-8 pr-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_1.5px_rgba(0,0,0,0.85)] transition-all" id="new-milestone-input" placeholder="增加新里程碑..." type="text">
+</div>
+<button class="h-8 px-space-sm bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded-lg transition-colors flex items-center gap-1" id="add-milestone-btn" type="button">
+<span class="">添加</span>
+</button>
+</div>
+</div>
+</form>
+<!-- 细微视觉分割 -->
+<div class="w-full h-px bg-surface-container"></div>
+<!-- 窗口底部操作栏 (Modal Action Bar) -->
+<div class="h-14 px-space-xl bg-surface-container-lowest flex items-center justify-between">
+<!-- 左侧轻量快捷键提示 -->
+<div class="flex items-center gap-space-sm text-outline font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 text-label-sm font-label-sm bg-surface-container text-on-surface-variant rounded-DEFAULT">↵</kbd>
+<span class="">创建并进入</span>
+</div>
+<span class="text-surface-container-highest">·</span>
+<div class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 text-label-sm font-label-sm bg-surface-container text-on-surface-variant rounded-DEFAULT">Esc</kbd>
+<span class="">取消</span>
+</div>
+</div>
+<!-- 右侧主辅操作按钮组 -->
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" id="cancel-btn" type="button">
+            取消
+          </button>
+<button class="h-9 px-space-lg rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-on-primary-fixed transition-all flex items-center gap-1.5 group" id="submit-btn" type="button">
+<span class="">创建并进入详情</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initModalBehavior() {
+    const backdrop = document.getElementById('project-modal-backdrop');
+    const closeBtn = document.getElementById('modal-close-btn');
+    const cancelBtn = document.getElementById('cancel-btn');
+    const submitBtn = document.getElementById('submit-btn');
+    const titleInput = document.getElementById('project-title-input');
+    const descInput = document.getElementById('project-desc-input');
+    const charCount = document.getElementById('char-count');
+    const milestoneInput = document.getElementById('new-milestone-input');
+    const addMilestoneBtn = document.getElementById('add-milestone-btn');
+    const milestonesList = document.getElementById('milestones-list');
+
+    // 字符计数反馈
+    if (descInput && charCount) {
+      descInput.addEventListener('input', (e) => {
+        const len = e.target.value.length;
+        charCount.textContent = `${len} / 300`;
+        if (len > 300) {
+          charCount.classList.add('text-error');
+        } else {
+          charCount.classList.remove('text-error');
+        }
+      });
+    }
+
+    // 动态添加里程碑
+    function appendMilestone() {
+      const val = milestoneInput.value.trim();
+      if (!val) return;
+      
+      const currentCount = milestonesList.children.length + 1;
+      const row = document.createElement('div');
+      row.className = 'group flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors';
+      row.innerHTML = `
+        <div class="flex items-center gap-space-sm min-w-0 flex-1">
+          <span class="w-4 h-4 rounded-DEFAULT bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">${currentCount}</span>
+          <span class="font-body-md text-body-md text-on-surface truncate">${val}</span>
+        </div>
+        <button type="button" class="text-outline hover:text-error transition-colors p-0.5 opacity-60 hover:opacity-100" aria-label="移除里程碑">
+          <span class="material-symbols-outlined text-[16px]">close</span>
+        </button>
+      `;
+      row.querySelector('button').addEventListener('click', () => row.remove());
+      milestonesList.appendChild(row);
+      milestoneInput.value = '';
+      milestoneInput.focus();
+    }
+
+    if (addMilestoneBtn && milestoneInput) {
+      addMilestoneBtn.addEventListener('click', appendMilestone);
+      milestoneInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          appendMilestone();
+        }
+      });
+    }
+
+    // 表单提交模拟
+    function handleCreate() {
+      const title = titleInput.value.trim();
+      if (!title) {
+        titleInput.focus();
+        titleInput.parentElement.querySelector('.h-0.5').classList.remove('bg-surface-container-high');
+        titleInput.parentElement.querySelector('.h-0.5').classList.add('bg-error');
+        return;
+      }
+      submitBtn.innerHTML = `
+        <span class="inline-block w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin"></span>
+        <span>写入数据库...</span>
+      `;
+      setTimeout(() => {
+        alert(`项目「${title}」创建成功，已持久化至本地 SQLite！`);
+      }, 350);
+    }
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', handleCreate);
+    }
+
+    // 关闭浮层交互
+    function dismissModal() {
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', dismissModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', dismissModal);
+
+    // 全局快捷键支持: Esc 关闭, Enter 提交
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dismissModal();
+      } else if (e.key === 'Enter' && (e.metaKey || e.ctrlKey || document.activeElement === titleInput)) {
+        if (document.activeElement !== descInput && document.activeElement !== milestoneInput) {
+          e.preventDefault();
+          handleCreate();
+        }
+      }
+    });
+  })();
+</script></main></div>
+
+
+
+</body></html>
