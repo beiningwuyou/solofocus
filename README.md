@@ -1,7 +1,7 @@
 # SoloFocus · 个人工作台 🚀
 
-> **基于“精力调度中枢”隐喻的单兵数字化操作系统**  
-> 100% 本地优先（Local-First）· 毫秒级极速响应 · 双轨架构（SQLite + Obsidian Markdown Vault）
+> **基于“精力调度”与 agent 任务拆解的个人工作台**  
+> 100% 本地优先（Local-First）
 
 [![Tauri](https://img.shields.io/badge/Tauri-v2-blue?logo=tauri)](https://tauri.app/)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev/)
