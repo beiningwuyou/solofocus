@@ -1,6 +1,6 @@
 # Personal Workbench
 
-本项目是 Tauri + React + Fastify 的本地优先个人工作台。`PROJECT.md` 定义产品范围；真实用户数据位于 `~/Library/Application Support/个人工作台/vault`，不在源码目录中。
+本项目是 Tauri + React + Fastify 的本地优先个人工作台。`docs/project-spec.md` 定义产品范围；真实用户数据位于 `~/Library/Application Support/个人工作台/vault`，不在源码目录中。
 
 ## 主要位置
 

@@ -64,15 +64,13 @@ SoloFocus 彻底抛弃了传统“扁平待办清单”的隐喻，引入**物�
 
 ## 📂 项目结构
 
-- `src/client/`：React 界面、页面与状态逻辑。
-- `src/server/`：Fastify API 与 Vault 读写、SQLite 数据持久化。
-- `src/shared/`：前后端共享领域模型。
-- `src-tauri/`：macOS 桌面壳、图标和打包配置。
-- `assets/design/`：设计规范、token、主题和视觉基线。
-- `scripts/`：开发、验证、构建与安装入口。
-- `data/samples/`：可提交的匿名测试样例 Vault。
-- `packaging/macos/`：本地安装与正式分发说明。
-- `docs/`：设计开发细则（[daily-routine.md](docs/daily-routine.md)、[design-development.md](docs/design-development.md)）。
+- `src/`：前后端核心源码与单元测试（`client/` 界面、`server/` Fastify与SQLite、`shared/` 领域模型）。
+- `src-tauri/`：macOS 桌面壳、系统托盘、图标与原生打包配置。
+- `assets/design/`：设计规范与 Token 真实源。
+- `data/samples/`：开箱即用的脱敏样例 Vault。
+- `docs/`：项目规范、打包指南、原型归档与测试说明（[project-spec.md](docs/project-spec.md)、[packaging.md](docs/packaging.md)）。
+- `public/fonts/`：本地矢量字体与核心图标资源。
+- `scripts/`：统一开发、验证、构建与安装入口。
 
 ---
 
